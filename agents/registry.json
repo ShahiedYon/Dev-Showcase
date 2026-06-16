@@ -1,0 +1,42 @@
+{
+  "framework": "Vex Python core + RAG brain + n8n workflows + Karpathy/autoresearch loop",
+  "team_rule": "Bee researches. Ex drafts or executes. Vee audits. Calc scores. Vex coordinates and routes approvals to Shahied.",
+  "team_guide_path": "TEAM.md",
+  "agents": [
+    {
+      "id": "vex",
+      "name": "Vex",
+      "role": "Main Coordinator",
+      "soul_path": "vex/SOUL.md",
+      "avatar_path": "vex/avatar.png"
+    },
+    {
+      "id": "bee",
+      "name": "Bee",
+      "role": "Researcher",
+      "soul_path": "bee/SOUL.md",
+      "avatar_path": "bee/avatar.png"
+    },
+    {
+      "id": "ex",
+      "name": "Ex",
+      "role": "Executor and Drafter",
+      "soul_path": "ex/SOUL.md",
+      "avatar_path": "ex/avatar.png"
+    },
+    {
+      "id": "vee",
+      "name": "Vee",
+      "role": "Auditor",
+      "soul_path": "vee/SOUL.md",
+      "avatar_path": "vee/avatar.png"
+    },
+    {
+      "id": "calc",
+      "name": "Calc",
+      "role": "Scorekeeper",
+      "soul_path": "calc/SOUL.md",
+      "avatar_path": "calc/avatar.png"
+    }
+  ]
+}

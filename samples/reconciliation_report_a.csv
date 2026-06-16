@@ -1,0 +1,6 @@
+invoice_id,customer,amount,status,invoice_date,owner
+INV-1001,Northwind Ltd,1250.00,Paid,2026-02-01,Avery
+INV-1002,Acme Inc,980.50,Open,2026-02-02,Bee
+INV-1003,Blue Harbor,420.00,Paid,2026-02-03,Ex
+INV-1004,Stonebridge,1120.75,Pending,2026-02-05,Vee
+INV-1005,Orbit Co,300.00,Open,2026-02-07,Calc

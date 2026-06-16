@@ -1,0 +1,9 @@
+cust id,full name,email address,phone number,company,signup,status
+1001, Alice Johnson ,ALICE@EXAMPLE.COM,(555) 123-4567,Northwind Ltd,2026-01-05,Active
+1002,Ben Carter,ben.carter@@example.com,555.222.3333,Acme Inc,01/08/2026,active
+1003,Carla Mendez,carla@example.com,5551239999,Blue Harbor,8 Jan 2026,PENDING
+1004,Diego Smith,diego@example.com,,Stonebridge,2026/01/10,inactive
+1005, Eve,eve@example.com,+1 555 888 7777,Orbit Co,not a date,Active
+1006,Frank Young, frank@example.com ,555-121-8888,Northwind Ltd,2026-01-12,Active
+1006,Frank Young, frank@example.com ,555-121-8888,Northwind Ltd,2026-01-12,Active
+1007,,missing.name@example.com,555-343-1111,Signal Works,2026-01-15,Pending

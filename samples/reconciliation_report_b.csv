@@ -1,0 +1,6 @@
+invoice_id,customer,amount,status,invoice_date,source_system
+INV-1001,Northwind Ltd,1250,Paid,02/01/2026,ERP
+INV-1002,Acme Inc,975.50,Open,2026-02-02,ERP
+INV-1003,Blue Harbor,420.00,Closed,2026-02-03,ERP
+INV-1005,Orbit Co,300.00,Open,2026-02-07,ERP
+INV-1006,Signal Works,875.00,Open,2026-02-08,ERP

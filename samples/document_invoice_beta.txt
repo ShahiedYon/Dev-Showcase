@@ -1,0 +1,8 @@
+Document ID: DOC-3051
+Supplier: Blue Harbor Consulting
+Invoice Date: 2026/04/18
+Due Date: 2026/05/18
+Email: finance@blueharbor.example
+Amount Due: 975.00
+
+Notes: monthly reporting dashboard setup.
