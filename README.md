@@ -1,6 +1,8 @@
-# Luma Flow Demo
+# Dev Showcase
 
-Luma Flow is a proof-of-concept suite for lightweight internal business automation apps.
+Dev Showcase is a portfolio-ready proof of concept featuring **Luma Flow**, a suite of lightweight internal business automation apps.
+
+The project is designed for interviewers and technical reviewers to see practical full-stack work: React UI, FastAPI services, file upload workflows, data processing, validation, exports, and reusable automation patterns.
 
 It demonstrates reusable workflows for:
 
@@ -53,3 +55,8 @@ Sample files live in `samples/`.
 ## Notes
 
 This is a portfolio/demo proof of concept, not a production SaaS. It is designed to show adaptable internal tooling patterns for business data transformation, reconciliation, template generation, and document extraction.
+
+## CV Summary
+
+**Dev Showcase: Luma Flow Automation Suite**  
+Built a full-stack proof of concept for internal business automation workflows using React, TypeScript, FastAPI, pandas, and Excel export pipelines. The suite demonstrates adaptable modules for messy data cleanup, report reconciliation, source-to-template mapping, and structured document extraction.
