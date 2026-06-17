@@ -5,8 +5,10 @@ dist/
 __pycache__/
 *.pyc
 *.pyo
+*.db
 .env
 backend/uploads/
 backend/outputs/
 backend/*.log
 frontend/*.log
+*-server.log

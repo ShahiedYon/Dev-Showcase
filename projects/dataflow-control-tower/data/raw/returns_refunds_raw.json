@@ -1,0 +1,1063 @@
+{
+  "generated_at": "2026-06-17T09:00:00+00:00",
+  "returns": [
+    {
+      "return_id": "RET-5001",
+      "order_id": "ORD-10008",
+      "requested_at": "2026-03-05T18:00:00+00:00",
+      "processed_at": "2026-03-09T18:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "SKU-TEE-002",
+          "qty_returned": 6,
+          "reason_code": "",
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 2051.49,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5002",
+      "order_id": "ORD-10102",
+      "requested_at": "2026-04-14T02:00:00+00:00",
+      "processed_at": "2026-04-15T02:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "p.mokoena@example.com",
+      "items": [
+        {
+          "sku": "SKU_TEE_002",
+          "qty_returned": 2,
+          "reason_code": "wrong_item",
+          "condition": null,
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 449.98,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5003",
+      "order_id": "ORD-10054",
+      "requested_at": "2026-05-28T19:00:00+00:00",
+      "processed_at": "2026-06-01T19:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "p.mokoena@example.com",
+      "items": [
+        {
+          "sku": "SKU_HDY_002",
+          "qty_returned": 2,
+          "reason_code": "wrong_item",
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 1031.69,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5004",
+      "order_id": "ORD-10093",
+      "requested_at": "2026-02-10T17:00:00+00:00",
+      "processed_at": "2026-02-14T17:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "SOC001",
+          "qty_returned": 1,
+          "reason_code": "",
+          "condition": null,
+          "restockable": null
+        }
+      ],
+      "refund": {
+        "amount": 93.44,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5005",
+      "order_id": "ORD-10107",
+      "requested_at": "2026-06-16T13:00:00+00:00",
+      "processed_at": "2026-06-17T13:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "jkt-rain-l",
+          "qty_returned": 2,
+          "reason_code": "too_large",
+          "condition": "missing_tags",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 1889.42,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5006",
+      "order_id": "ORD-10013",
+      "requested_at": "2026-04-14T19:00:00+00:00",
+      "processed_at": "2026-04-18T19:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "j.petersen@example.com",
+      "items": [
+        {
+          "sku": "TEE002",
+          "qty_returned": 7,
+          "reason_code": "",
+          "condition": "opened",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 1852.59,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5007",
+      "order_id": "ORD-10025",
+      "requested_at": "2026-05-21T20:00:00+00:00",
+      "processed_at": "2026-05-25T20:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "t.williams@example.com",
+      "items": [
+        {
+          "sku": "SKU-HDY-001",
+          "qty_returned": 3,
+          "reason_code": "damaged",
+          "condition": "missing_tags",
+          "restockable": null
+        }
+      ],
+      "refund": {
+        "amount": 1445.59,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5008",
+      "order_id": "ORD-10086",
+      "requested_at": "2026-06-04T08:00:00+00:00",
+      "processed_at": "2026-06-06T08:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "l.smith@example.com",
+      "items": [
+        {
+          "sku": "sticker-pack-a",
+          "qty_returned": 2,
+          "reason_code": "wrong_item",
+          "condition": "new",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 152.04,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5009",
+      "order_id": "ORD-10006",
+      "requested_at": "2026-06-21T19:00:00+00:00",
+      "processed_at": null,
+      "channel": "returns_portal",
+      "customer_email": "t.williams@example.com",
+      "items": [
+        {
+          "sku": "bag-001",
+          "qty_returned": 1,
+          "reason_code": null,
+          "condition": null,
+          "restockable": null
+        }
+      ],
+      "refund": {
+        "amount": 160.37,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5010",
+      "order_id": "ORD-10034",
+      "requested_at": "2026-05-06T02:00:00+00:00",
+      "processed_at": "2026-05-05T02:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "z.omar@example.com",
+      "items": [
+        {
+          "sku": "SOC001",
+          "qty_returned": 2,
+          "reason_code": "too_small",
+          "condition": "opened",
+          "restockable": null
+        }
+      ],
+      "refund": {
+        "amount": 195.04,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5011",
+      "order_id": "ORD-10101",
+      "requested_at": "2026-06-13T09:00:00+00:00",
+      "processed_at": "2026-06-12T09:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "HDY001",
+          "qty_returned": 3,
+          "reason_code": "too_small",
+          "condition": "opened",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 293.28,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5012",
+      "order_id": "ORD-10056",
+      "requested_at": "2026-05-13T12:00:00+00:00",
+      "processed_at": "2026-05-17T12:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "z.omar@example.com",
+      "items": [
+        {
+          "sku": "jkt-rain-l",
+          "qty_returned": 1,
+          "reason_code": "late_delivery",
+          "condition": "damaged",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 926.38,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5013",
+      "order_id": "ORD-10070",
+      "requested_at": "2026-05-15T18:00:00+00:00",
+      "processed_at": "2026-05-15T18:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "aqeelah@example.com",
+      "items": [
+        {
+          "sku": "SKU-MUG-001",
+          "qty_returned": 2,
+          "reason_code": "changed_mind",
+          "condition": null,
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 282.23,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5014",
+      "order_id": "ORD-10087",
+      "requested_at": "2026-06-04T07:00:00+00:00",
+      "processed_at": "2026-06-14T07:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "n.naidoo@example.com",
+      "items": [
+        {
+          "sku": "JKT001",
+          "qty_returned": 2,
+          "reason_code": "too_large",
+          "condition": "missing_tags",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 2438.11,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5015",
+      "order_id": "ORD-10120",
+      "requested_at": "2026-04-22T13:00:00+00:00",
+      "processed_at": "2026-04-24T13:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "z.omar@example.com",
+      "items": [
+        {
+          "sku": "mug-001",
+          "qty_returned": 1,
+          "reason_code": "late_delivery",
+          "condition": "new",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 124.9,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5016",
+      "order_id": "ORD-10034",
+      "requested_at": "2026-04-10T05:00:00+00:00",
+      "processed_at": "2026-04-17T05:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "z.omar@example.com",
+      "items": [
+        {
+          "sku": "STK001",
+          "qty_returned": 1,
+          "reason_code": "damaged",
+          "condition": "opened",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 60.34,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5017",
+      "order_id": "ORD-10020",
+      "requested_at": "2026-02-21T21:00:00+00:00",
+      "processed_at": null,
+      "channel": "support_agent",
+      "customer_email": "aqeelah@example.com",
+      "items": [
+        {
+          "sku": "JKT001",
+          "qty_returned": 1,
+          "reason_code": "late_delivery",
+          "condition": "missing_tags",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 1098.18,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5018",
+      "order_id": "ORD-10042",
+      "requested_at": "2026-05-13T07:00:00+00:00",
+      "processed_at": "2026-05-23T07:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "n.naidoo@example.com",
+      "items": [
+        {
+          "sku": "SKU_TEE_002",
+          "qty_returned": 1,
+          "reason_code": "",
+          "condition": "opened",
+          "restockable": null
+        }
+      ],
+      "refund": {
+        "amount": 18.09,
+        "currency": "EUR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5019",
+      "order_id": "ORD-10080",
+      "requested_at": "2026-05-29T10:00:00+00:00",
+      "processed_at": "2026-05-28T10:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "t.williams@example.com",
+      "items": [
+        {
+          "sku": "STK-A",
+          "qty_returned": 1,
+          "reason_code": "changed_mind",
+          "condition": "opened",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 74.37,
+        "currency": "zar",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5020",
+      "order_id": "ORD-10054",
+      "requested_at": "2026-05-05T05:00:00+00:00",
+      "processed_at": "2026-05-08T05:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "p.mokoena@example.com",
+      "items": [
+        {
+          "sku": "SKU_HDY_002",
+          "qty_returned": 2,
+          "reason_code": "wrong_item",
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 1508.63,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5021",
+      "order_id": "ORD-10041",
+      "requested_at": "2026-04-02T17:00:00+00:00",
+      "processed_at": "2026-04-05T17:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "j.petersen@example.com",
+      "items": [
+        {
+          "sku": "TEE001",
+          "qty_returned": 1,
+          "reason_code": null,
+          "condition": "opened",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 296.81,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5022",
+      "order_id": "ORD-10038",
+      "requested_at": "2026-02-13T12:00:00+00:00",
+      "processed_at": "2026-02-13T12:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "j.petersen@example.com",
+      "items": [
+        {
+          "sku": "jkt-rain-l",
+          "qty_returned": 1,
+          "reason_code": "late_delivery",
+          "condition": "damaged",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 1013.42,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5023",
+      "order_id": "ORD-99999",
+      "requested_at": "2026-04-07T11:00:00+00:00",
+      "processed_at": "2026-04-07T11:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "UNKNOWN-ABC",
+          "qty_returned": 1,
+          "reason_code": "wrong_item",
+          "condition": "damaged",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 571.15,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5024",
+      "order_id": "ORD-10074",
+      "requested_at": "2026-05-26T02:00:00+00:00",
+      "processed_at": "2026-05-29T02:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "r.vanwyk@example.com",
+      "items": [
+        {
+          "sku": "SKU_TEE_002",
+          "qty_returned": 2,
+          "reason_code": "",
+          "condition": "new",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 448.1,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5025",
+      "order_id": "ORD-10049",
+      "requested_at": "2026-04-23T20:00:00+00:00",
+      "processed_at": "2026-04-25T20:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "SKU-JKT-001",
+          "qty_returned": 3,
+          "reason_code": null,
+          "condition": "missing_tags",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 2696.5,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5026",
+      "order_id": "ORD-10021",
+      "requested_at": "2026-04-02T21:00:00+00:00",
+      "processed_at": "2026-04-04T21:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "z.omar@example.com",
+      "items": [
+        {
+          "sku": "SKU-TEE-002",
+          "qty_returned": 1,
+          "reason_code": "too_small",
+          "condition": "missing_tags",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 214.5,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5027",
+      "order_id": "ORD-10025",
+      "requested_at": "2026-02-22T20:00:00+00:00",
+      "processed_at": "2026-02-25T20:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "t.williams@example.com",
+      "items": [
+        {
+          "sku": "SKU-HDY-001",
+          "qty_returned": 1,
+          "reason_code": "too_small",
+          "condition": "new",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 720.1,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5028",
+      "order_id": "ORD-10072",
+      "requested_at": "2026-05-31T17:00:00+00:00",
+      "processed_at": "2026-06-02T17:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "z.omar@example.com",
+      "items": [
+        {
+          "sku": "STK-A",
+          "qty_returned": 1,
+          "reason_code": "",
+          "condition": null,
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 93.85,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5029",
+      "order_id": "ORD-10084",
+      "requested_at": "2026-03-31T02:00:00+00:00",
+      "processed_at": null,
+      "channel": "returns_portal",
+      "customer_email": "r.vanwyk@example.com",
+      "items": [
+        {
+          "sku": "SKU-HDY-002",
+          "qty_returned": 2,
+          "reason_code": null,
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 1413.94,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5030",
+      "order_id": "ORD-10114",
+      "requested_at": "2026-06-03T09:00:00+00:00",
+      "processed_at": "2026-06-03T09:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "j.petersen@example.com",
+      "items": [
+        {
+          "sku": "SKU-JKT-001",
+          "qty_returned": 1,
+          "reason_code": "",
+          "condition": "missing_tags",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 885.44,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5031",
+      "order_id": "ORD-10100",
+      "requested_at": "2026-05-11T12:00:00+00:00",
+      "processed_at": "2026-05-12T12:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "r.vanwyk@example.com",
+      "items": [
+        {
+          "sku": "SKU-MUG-001",
+          "qty_returned": 2,
+          "reason_code": "changed_mind",
+          "condition": "damaged",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 240.32,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5032",
+      "order_id": "ORD-10028",
+      "requested_at": "2026-03-07T09:00:00+00:00",
+      "processed_at": "2026-03-07T09:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "s.khan@example.com",
+      "items": [
+        {
+          "sku": "SKU-HDY-001",
+          "qty_returned": 3,
+          "reason_code": "too_small",
+          "condition": "opened",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 197.86,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5033",
+      "order_id": "ORD-10109",
+      "requested_at": "2026-05-24T23:00:00+00:00",
+      "processed_at": "2026-05-24T23:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "t.williams@example.com",
+      "items": [
+        {
+          "sku": "CAP001",
+          "qty_returned": 3,
+          "reason_code": null,
+          "condition": "new",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 382.15,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5034",
+      "order_id": "ORD-10010",
+      "requested_at": "2026-04-10T12:00:00+00:00",
+      "processed_at": "2026-04-10T12:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "m.jacobs@example.com",
+      "items": [
+        {
+          "sku": "SKU-SOC-001",
+          "qty_returned": 1,
+          "reason_code": "damaged",
+          "condition": "missing_tags",
+          "restockable": null
+        }
+      ],
+      "refund": {
+        "amount": 86.11,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5035",
+      "order_id": "ORD-10030",
+      "requested_at": "2026-05-29T23:00:00+00:00",
+      "processed_at": "2026-06-08T23:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "sticker-pack-a",
+          "qty_returned": 1,
+          "reason_code": "too_small",
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 64.67,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5036",
+      "order_id": "ORD-10047",
+      "requested_at": "2026-03-23T11:00:00+00:00",
+      "processed_at": "2026-03-23T11:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "r.vanwyk@example.com",
+      "items": [
+        {
+          "sku": "hdy-001",
+          "qty_returned": 1,
+          "reason_code": "changed_mind",
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 30.65,
+        "currency": "USD",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5037",
+      "order_id": "ORD-10003",
+      "requested_at": "2026-02-11T18:00:00+00:00",
+      "processed_at": "2026-02-21T18:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "aqeelah@example.com",
+      "items": [
+        {
+          "sku": "sticker-pack-a",
+          "qty_returned": 3,
+          "reason_code": "late_delivery",
+          "condition": "new",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 207.66,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5038",
+      "order_id": "ORD-10108",
+      "requested_at": "2026-06-18T03:00:00+00:00",
+      "processed_at": "2026-06-19T03:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "n.naidoo@example.com",
+      "items": [
+        {
+          "sku": "HDY-001",
+          "qty_returned": 1,
+          "reason_code": "too_small",
+          "condition": "missing_tags",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 672.58,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5039",
+      "order_id": "ORD-10008",
+      "requested_at": "2026-06-05T22:00:00+00:00",
+      "processed_at": "2026-06-08T22:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "HDY-002",
+          "qty_returned": 3,
+          "reason_code": null,
+          "condition": "damaged",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 1425.58,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5040",
+      "order_id": "ORD-10070",
+      "requested_at": "2026-04-17T08:00:00+00:00",
+      "processed_at": "2026-04-21T08:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "aqeelah@example.com",
+      "items": [
+        {
+          "sku": "tee-001",
+          "qty_returned": 1,
+          "reason_code": "late_delivery",
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 227.34,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5041",
+      "order_id": "ORD-10101",
+      "requested_at": "2026-06-18T12:00:00+00:00",
+      "processed_at": "2026-06-19T12:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "sticker-pack-a",
+          "qty_returned": 2,
+          "reason_code": "too_large",
+          "condition": "new",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 110.7,
+        "currency": "ZAR",
+        "method": "original_payment"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5042",
+      "order_id": "ORD-10027",
+      "requested_at": "2026-02-09T06:00:00+00:00",
+      "processed_at": "2026-02-09T06:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "t.williams@example.com",
+      "items": [
+        {
+          "sku": "hdy-001",
+          "qty_returned": 5,
+          "reason_code": "changed_mind",
+          "condition": "new",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 2482.71,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5043",
+      "order_id": "ORD-10012",
+      "requested_at": "2026-02-04T06:00:00+00:00",
+      "processed_at": "2026-02-11T06:00:00+00:00",
+      "channel": "marketplace",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "SKU-MUG-001",
+          "qty_returned": 1,
+          "reason_code": "",
+          "condition": "damaged",
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 150.76,
+        "currency": "USD",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5044",
+      "order_id": "ORD-10008",
+      "requested_at": "2026-02-19T09:00:00+00:00",
+      "processed_at": "2026-02-19T09:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "k.adams@example.com",
+      "items": [
+        {
+          "sku": "HDY-002",
+          "qty_returned": 3,
+          "reason_code": "damaged",
+          "condition": null,
+          "restockable": true
+        }
+      ],
+      "refund": {
+        "amount": 1975.59,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-5045",
+      "order_id": "ORD-10066",
+      "requested_at": "2026-02-28T20:00:00+00:00",
+      "processed_at": "2026-03-04T20:00:00+00:00",
+      "channel": "returns_portal",
+      "customer_email": "aqeelah@example.com",
+      "items": [
+        {
+          "sku": "SOC001",
+          "qty_returned": 2,
+          "reason_code": "late_delivery",
+          "condition": "opened",
+          "restockable": null
+        }
+      ],
+      "refund": {
+        "amount": 253.89,
+        "currency": "ZAR",
+        "method": "store_credit"
+      },
+      "source_system": "Returnly-like Portal"
+    },
+    {
+      "return_id": "RET-DUPE-1",
+      "order_id": "ORD-10015",
+      "requested_at": "2026-05-10T08:30:00+00:00",
+      "processed_at": "2026-05-09T09:00:00+00:00",
+      "channel": "support_agent",
+      "customer_email": "unknown@example.com",
+      "items": [
+        {
+          "sku": "STK-A",
+          "qty_returned": 99,
+          "reason_code": null,
+          "condition": "damaged",
+          "restockable": false
+        }
+      ],
+      "refund": {
+        "amount": 9999.0,
+        "currency": "ZAR",
+        "method": "manual_bank_transfer"
+      },
+      "source_system": "Returnly-like Portal"
+    }
+  ]
+}

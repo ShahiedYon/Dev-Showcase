@@ -1,0 +1,2171 @@
+{
+  "api_name": "CourierHub Mock API",
+  "page": 1,
+  "page_size": 100,
+  "has_more": false,
+  "generated_at": "2026-06-17T09:00:00+00:00",
+  "shipments": [
+    {
+      "shipment_id": "SHP-8001",
+      "order_id": "ORD-10084",
+      "warehouse_id": "WH-DBN",
+      "carrier": "DHL",
+      "tracking_number": "TRK4589118",
+      "status": "delivered",
+      "shipped_at": "2026-03-29T11:00:00+00:00",
+      "delivered_at": "2026-04-02T11:00:00+00:00",
+      "shipping_cost": 141.29,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-29T11:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-02T11:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-DUPLICATE",
+      "order_id": "ORD-10070",
+      "warehouse_id": "WH-DBN",
+      "carrier": "DHL",
+      "tracking_number": "TRK6064062",
+      "status": "returned_to_sender",
+      "shipped_at": null,
+      "delivered_at": "2026-04-30T12:00:00+00:00",
+      "shipping_cost": 217.27,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-29T12:00:00+00:00"
+        },
+        {
+          "event": "returned_to_sender",
+          "timestamp": "2026-04-30T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8003",
+      "order_id": "ORD-10006",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK3322104",
+      "status": "exception",
+      "shipped_at": "2026-03-16T17:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 200.68,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-16T17:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-03-17T17:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8004",
+      "order_id": "ORD-10039",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Aramex",
+      "tracking_number": "TRK3900822",
+      "status": "exception",
+      "shipped_at": "2026-03-22T02:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 202.33,
+      "currency": "ZAR",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-22T02:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-03-23T02:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8005",
+      "order_id": "ORD-10008",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Pudo",
+      "tracking_number": "TRK3022334",
+      "status": "exception",
+      "shipped_at": "2026-06-01T12:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 84.68,
+      "currency": "ZAR",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-01T12:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-06-02T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8006",
+      "order_id": "ORD-10009",
+      "warehouse_id": "WH-JHB",
+      "carrier": "DHL",
+      "tracking_number": "TRK7591477",
+      "status": "delivered",
+      "shipped_at": "2026-03-24T16:00:00+00:00",
+      "delivered_at": "2026-03-25T16:00:00+00:00",
+      "shipping_cost": 176.75,
+      "currency": "ZAR",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-24T16:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-03-25T16:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8007",
+      "order_id": "ORD-10067",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK2427388",
+      "status": "in_transit",
+      "shipped_at": "2026-03-20T12:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 121.04,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-20T12:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-03-21T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8008",
+      "order_id": "ORD-10074",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK2201986",
+      "status": "delivered",
+      "shipped_at": "2026-05-28T06:00:00+00:00",
+      "delivered_at": "2026-06-01T06:00:00+00:00",
+      "shipping_cost": 120.26,
+      "currency": "ZAR",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-28T06:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-06-01T06:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8009",
+      "order_id": "ORD-10102",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Aramex",
+      "tracking_number": "TRK6867267",
+      "status": "delivered",
+      "shipped_at": "2026-04-20T13:00:00+00:00",
+      "delivered_at": "2026-04-23T13:00:00+00:00",
+      "shipping_cost": 218.28,
+      "currency": "",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-20T13:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-23T13:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8010",
+      "order_id": "ORD-10069",
+      "warehouse_id": "WH-DBN",
+      "carrier": "FastWay",
+      "tracking_number": "TRK5077673",
+      "status": "in_transit",
+      "shipped_at": "2026-01-16T07:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 207.18,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-16T07:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-01-17T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8011",
+      "order_id": "ORD-10054",
+      "warehouse_id": "WH-DBN",
+      "carrier": "DHL",
+      "tracking_number": "TRK5339561",
+      "status": "delivered",
+      "shipped_at": "2026-02-02T09:00:00+00:00",
+      "delivered_at": "2026-02-06T09:00:00+00:00",
+      "shipping_cost": 154.03,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-02T09:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-02-06T09:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8012",
+      "order_id": "ORD-10060",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK8800748",
+      "status": "label_created",
+      "shipped_at": "2026-06-03T21:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 46.46,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-03T21:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-06-04T21:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8013",
+      "order_id": "ORD-10102",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Pudo",
+      "tracking_number": "TRK2671072",
+      "status": "exception",
+      "shipped_at": "2026-04-07T03:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 129.82,
+      "currency": "ZAR",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-07T03:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-04-08T03:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8014",
+      "order_id": "ORD-10030",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Aramex",
+      "tracking_number": "TRK7600153",
+      "status": "label_created",
+      "shipped_at": "2026-05-13T14:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 48.22,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-13T14:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-05-14T14:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8015",
+      "order_id": "ORD-10097",
+      "warehouse_id": "WH-JHB",
+      "carrier": "FastWay",
+      "tracking_number": "TRK5700872",
+      "status": "label_created",
+      "shipped_at": "2026-03-23T07:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 104.81,
+      "currency": "",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-23T07:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-03-24T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8016",
+      "order_id": "ORD-10014",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK6240913",
+      "status": "delivered",
+      "shipped_at": "2026-04-12T16:00:00+00:00",
+      "delivered_at": "2026-04-19T16:00:00+00:00",
+      "shipping_cost": 102.62,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-12T16:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-19T16:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8017",
+      "order_id": "ORD-10101",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK8215281",
+      "status": "in_transit",
+      "shipped_at": "2026-02-09T18:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 215.76,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-09T18:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-02-10T18:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8018",
+      "order_id": "ORD-10050",
+      "warehouse_id": "WH-JHB",
+      "carrier": "DHL",
+      "tracking_number": "TRK6346688",
+      "status": "in_transit",
+      "shipped_at": "2026-01-22T17:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 117.46,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-22T17:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-01-23T17:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8019",
+      "order_id": "ORD-10069",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK4874049",
+      "status": "in_transit",
+      "shipped_at": "2026-03-16T04:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 85.41,
+      "currency": "ZAR",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-16T04:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-03-17T04:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8020",
+      "order_id": "ORD-10013",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK3307080",
+      "status": "delivered",
+      "shipped_at": "2026-05-07T04:00:00+00:00",
+      "delivered_at": "2026-05-12T04:00:00+00:00",
+      "shipping_cost": 84.6,
+      "currency": "",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-07T04:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-12T04:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8021",
+      "order_id": "ORD-10041",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK9219877",
+      "status": "in_transit",
+      "shipped_at": "2026-04-20T07:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 196.69,
+      "currency": "zar",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-20T07:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-04-21T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8022",
+      "order_id": "ORD-10064",
+      "warehouse_id": "WH-JHB",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK9811906",
+      "status": "delivered",
+      "shipped_at": "2026-01-15T19:00:00+00:00",
+      "delivered_at": "2026-01-22T19:00:00+00:00",
+      "shipping_cost": 168.22,
+      "currency": "ZAR",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-15T19:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-22T19:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8023",
+      "order_id": "ORD-10070",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK1827040",
+      "status": "delivered",
+      "shipped_at": "2026-05-01T01:00:00+00:00",
+      "delivered_at": "2026-05-03T01:00:00+00:00",
+      "shipping_cost": 121.92,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-01T01:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-03T01:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8024",
+      "order_id": "ORD-10071",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK8578236",
+      "status": "label_created",
+      "shipped_at": "2026-02-16T13:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 132.62,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-16T13:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-02-17T13:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8025",
+      "order_id": "ORD-10063",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK6437072",
+      "status": "delivered",
+      "shipped_at": "2026-04-20T10:00:00+00:00",
+      "delivered_at": "2026-04-18T10:00:00+00:00",
+      "shipping_cost": 203.75,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-20T10:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-18T10:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8026",
+      "order_id": "ORD-10015",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK3682671",
+      "status": "in_transit",
+      "shipped_at": "2026-02-03T22:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 111.61,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-03T22:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-02-04T22:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8027",
+      "order_id": "ORD-10087",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Aramex",
+      "tracking_number": "TRK8486970",
+      "status": "delivered",
+      "shipped_at": "2026-02-12T05:00:00+00:00",
+      "delivered_at": "2026-02-22T05:00:00+00:00",
+      "shipping_cost": 76.62,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-12T05:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-02-22T05:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8028",
+      "order_id": "ORD-10001",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK4990936",
+      "status": "exception",
+      "shipped_at": "2026-06-13T08:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 160.41,
+      "currency": "",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-13T08:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-06-14T08:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8029",
+      "order_id": "ORD-10069",
+      "warehouse_id": "WH-DBN",
+      "carrier": "DHL",
+      "tracking_number": null,
+      "status": "in_transit",
+      "shipped_at": "2026-01-25T19:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 159.32,
+      "currency": "ZAR",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-25T19:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-01-26T19:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8030",
+      "order_id": "ORD-10007",
+      "warehouse_id": "WH-CPT",
+      "carrier": "DHL",
+      "tracking_number": "TRK5771113",
+      "status": "in_transit",
+      "shipped_at": "2026-06-01T19:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 166.01,
+      "currency": "zar",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-01T19:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-06-02T19:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8031",
+      "order_id": "ORD-10113",
+      "warehouse_id": "WH-JHB",
+      "carrier": "FastWay",
+      "tracking_number": "TRK2089275",
+      "status": "in_transit",
+      "shipped_at": "2026-06-02T11:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 68.55,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-02T11:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-06-03T11:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8032",
+      "order_id": "ORD-10081",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK9114518",
+      "status": "delivered",
+      "shipped_at": "2026-04-20T16:00:00+00:00",
+      "delivered_at": "2026-04-22T16:00:00+00:00",
+      "shipping_cost": 150.84,
+      "currency": "USD",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-20T16:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-22T16:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8033",
+      "order_id": "ORD-10095",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK9350710",
+      "status": "delivered",
+      "shipped_at": "2026-03-27T08:00:00+00:00",
+      "delivered_at": "2026-04-01T08:00:00+00:00",
+      "shipping_cost": 76.48,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-27T08:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-01T08:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8034",
+      "order_id": "ORD-10030",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK7946457",
+      "status": "delivered",
+      "shipped_at": "2026-01-05T03:00:00+00:00",
+      "delivered_at": "2026-01-06T03:00:00+00:00",
+      "shipping_cost": 106.19,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-05T03:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-06T03:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8035",
+      "order_id": "ORD-10099",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Aramex",
+      "tracking_number": "TRK2909863",
+      "status": "label_created",
+      "shipped_at": "2026-02-25T22:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 104.74,
+      "currency": "ZAR",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-25T22:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-02-26T22:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8036",
+      "order_id": "ORD-10030",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK8727886",
+      "status": "delivered",
+      "shipped_at": "2026-03-30T10:00:00+00:00",
+      "delivered_at": "2026-04-06T10:00:00+00:00",
+      "shipping_cost": 138.97,
+      "currency": "USD",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-30T10:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-06T10:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8037",
+      "order_id": "ORD-10118",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK4494064",
+      "status": "in_transit",
+      "shipped_at": "2026-04-20T23:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 103.05,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-20T23:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-04-21T23:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8038",
+      "order_id": "ORD-10024",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK2960327",
+      "status": "delivered",
+      "shipped_at": "2026-03-17T00:00:00+00:00",
+      "delivered_at": "2026-03-20T00:00:00+00:00",
+      "shipping_cost": 176.52,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-17T00:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-03-20T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8039",
+      "order_id": "ORD-10041",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Aramex",
+      "tracking_number": "TRK7278297",
+      "status": "delivered",
+      "shipped_at": "2026-04-20T02:00:00+00:00",
+      "delivered_at": "2026-04-24T02:00:00+00:00",
+      "shipping_cost": 181.11,
+      "currency": "ZAR",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-20T02:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-24T02:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8040",
+      "order_id": "ORD-10078",
+      "warehouse_id": "WH-JHB",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK6491819",
+      "status": "delivered",
+      "shipped_at": "2026-01-11T15:00:00+00:00",
+      "delivered_at": "2026-01-16T15:00:00+00:00",
+      "shipping_cost": 197.56,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-11T15:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-16T15:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8041",
+      "order_id": "ORD-10111",
+      "warehouse_id": "WH-CPT",
+      "carrier": "FastWay",
+      "tracking_number": "TRK2460891",
+      "status": "delivered",
+      "shipped_at": "2026-01-14T14:00:00+00:00",
+      "delivered_at": "2026-01-18T14:00:00+00:00",
+      "shipping_cost": 200.61,
+      "currency": "ZAR",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-14T14:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-18T14:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8042",
+      "order_id": "ORD-10006",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK8400692",
+      "status": "delivered",
+      "shipped_at": "2026-06-01T09:00:00+00:00",
+      "delivered_at": "2026-06-08T09:00:00+00:00",
+      "shipping_cost": 92.71,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-01T09:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-06-08T09:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8043",
+      "order_id": "ORD-10019",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Aramex",
+      "tracking_number": "TRK5752443",
+      "status": "in_transit",
+      "shipped_at": "2026-01-08T19:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 74.97,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-08T19:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-01-09T19:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8044",
+      "order_id": "ORD-10084",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Pudo",
+      "tracking_number": "TRK8479891",
+      "status": "label_created",
+      "shipped_at": "2026-04-28T01:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 99.68,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-28T01:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-04-29T01:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8045",
+      "order_id": "ORD-10114",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK8808058",
+      "status": "delivered",
+      "shipped_at": "2026-05-04T18:00:00+00:00",
+      "delivered_at": "2026-05-06T18:00:00+00:00",
+      "shipping_cost": 210.8,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-04T18:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-06T18:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8046",
+      "order_id": "ORD-10058",
+      "warehouse_id": "WH-JHB",
+      "carrier": "FastWay",
+      "tracking_number": null,
+      "status": "delivered",
+      "shipped_at": "2026-04-15T05:00:00+00:00",
+      "delivered_at": "2026-04-22T05:00:00+00:00",
+      "shipping_cost": 128.76,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-15T05:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-22T05:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8047",
+      "order_id": "ORD-10115",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Aramex",
+      "tracking_number": "TRK2189907",
+      "status": "in_transit",
+      "shipped_at": "2026-04-04T19:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 138.23,
+      "currency": "",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-04T19:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-04-05T19:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8048",
+      "order_id": "ORD-10037",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK8304023",
+      "status": "delivered",
+      "shipped_at": "2026-06-12T07:00:00+00:00",
+      "delivered_at": "2026-06-17T07:00:00+00:00",
+      "shipping_cost": 104.89,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-12T07:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-06-17T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8049",
+      "order_id": "ORD-10102",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Aramex",
+      "tracking_number": "TRK8469488",
+      "status": "delivered",
+      "shipped_at": "2026-01-24T23:00:00+00:00",
+      "delivered_at": "2026-01-31T23:00:00+00:00",
+      "shipping_cost": 212.28,
+      "currency": "ZAR",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-24T23:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-31T23:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8050",
+      "order_id": "ORD-10105",
+      "warehouse_id": "WH-CPT",
+      "carrier": "DHL",
+      "tracking_number": "TRK1003092",
+      "status": "delivered",
+      "shipped_at": "2026-06-06T12:00:00+00:00",
+      "delivered_at": "2026-06-09T12:00:00+00:00",
+      "shipping_cost": 160.65,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-06T12:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-06-09T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8051",
+      "order_id": "ORD-10063",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Aramex",
+      "tracking_number": "TRK8293509",
+      "status": "delivered",
+      "shipped_at": "2026-06-11T18:00:00+00:00",
+      "delivered_at": "2026-06-15T18:00:00+00:00",
+      "shipping_cost": 205.15,
+      "currency": "ZAR",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-11T18:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-06-15T18:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8052",
+      "order_id": "ORD-10095",
+      "warehouse_id": "WH-JHB",
+      "carrier": "FastWay",
+      "tracking_number": null,
+      "status": "in_transit",
+      "shipped_at": "2026-05-15T12:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 216.27,
+      "currency": "ZAR",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-15T12:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-05-16T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8053",
+      "order_id": "ORD-10006",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK4543617",
+      "status": "delivered",
+      "shipped_at": "2026-03-06T13:00:00+00:00",
+      "delivered_at": "2026-03-13T13:00:00+00:00",
+      "shipping_cost": 128.1,
+      "currency": "zar",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-06T13:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-03-13T13:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-DUPLICATE",
+      "order_id": "ORD-10057",
+      "warehouse_id": "WH-CPT",
+      "carrier": "FastWay",
+      "tracking_number": "TRK9165493",
+      "status": "delivered",
+      "shipped_at": "2026-04-21T04:00:00+00:00",
+      "delivered_at": "2026-04-24T04:00:00+00:00",
+      "shipping_cost": 215.62,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-21T04:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-24T04:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8055",
+      "order_id": "ORD-10023",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK8550515",
+      "status": "returned_to_sender",
+      "shipped_at": "2026-04-21T14:00:00+00:00",
+      "delivered_at": "2026-05-01T14:00:00+00:00",
+      "shipping_cost": 84.5,
+      "currency": "",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-21T14:00:00+00:00"
+        },
+        {
+          "event": "returned_to_sender",
+          "timestamp": "2026-05-01T14:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8056",
+      "order_id": "ORD-10090",
+      "warehouse_id": "WH-DBN",
+      "carrier": "FastWay",
+      "tracking_number": "TRK9107893",
+      "status": "in_transit",
+      "shipped_at": "2026-05-12T23:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 64.8,
+      "currency": "",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-12T23:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-05-13T23:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8057",
+      "order_id": "ORD-10023",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK2309997",
+      "status": "delivered",
+      "shipped_at": "2026-05-19T08:00:00+00:00",
+      "delivered_at": "2026-05-23T08:00:00+00:00",
+      "shipping_cost": 139.36,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-19T08:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-23T08:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8058",
+      "order_id": "ORD-10054",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK5942868",
+      "status": "exception",
+      "shipped_at": "2026-05-21T00:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 51.18,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-21T00:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-05-22T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8059",
+      "order_id": "ORD-10011",
+      "warehouse_id": "WH-JHB",
+      "carrier": "ManualCourier",
+      "tracking_number": null,
+      "status": "delivered",
+      "shipped_at": "2026-05-06T18:00:00+00:00",
+      "delivered_at": "2026-05-08T18:00:00+00:00",
+      "shipping_cost": 67.19,
+      "currency": "ZAR",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-06T18:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-08T18:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8060",
+      "order_id": "ORD-10038",
+      "warehouse_id": "WH-DBN",
+      "carrier": "DHL",
+      "tracking_number": "TRK3535634",
+      "status": "in_transit",
+      "shipped_at": "2026-02-07T19:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 109.71,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-07T19:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-02-08T19:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8061",
+      "order_id": "ORD-10118",
+      "warehouse_id": "WH-JHB",
+      "carrier": "DHL",
+      "tracking_number": "TRK3586212",
+      "status": "exception",
+      "shipped_at": "2026-03-06T15:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 176.73,
+      "currency": "",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-06T15:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-03-07T15:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8062",
+      "order_id": "ORD-10036",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Aramex",
+      "tracking_number": "TRK2946062",
+      "status": "delivered",
+      "shipped_at": "2026-04-27T23:00:00+00:00",
+      "delivered_at": "2026-05-04T23:00:00+00:00",
+      "shipping_cost": 126.2,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-27T23:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-04T23:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8063",
+      "order_id": "ORD-10072",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Pudo",
+      "tracking_number": null,
+      "status": "delivered",
+      "shipped_at": "2026-05-21T07:00:00+00:00",
+      "delivered_at": "2026-05-25T07:00:00+00:00",
+      "shipping_cost": 123.54,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-21T07:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-25T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8064",
+      "order_id": "ORD-10015",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Aramex",
+      "tracking_number": "TRK2648810",
+      "status": "delivered",
+      "shipped_at": "2026-05-21T20:00:00+00:00",
+      "delivered_at": "2026-05-24T20:00:00+00:00",
+      "shipping_cost": 147.23,
+      "currency": "",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-21T20:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-24T20:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8065",
+      "order_id": "ORD-10112",
+      "warehouse_id": "WH-CPT",
+      "carrier": "FastWay",
+      "tracking_number": "TRK2140044",
+      "status": "delivered",
+      "shipped_at": null,
+      "delivered_at": "2026-06-09T06:00:00+00:00",
+      "shipping_cost": 62.1,
+      "currency": "ZAR",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-04T06:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-06-09T06:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8066",
+      "order_id": "ORD-10056",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK4637715",
+      "status": "label_created",
+      "shipped_at": "2026-03-02T23:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 156.66,
+      "currency": "ZAR",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-02T23:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-03-03T23:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8067",
+      "order_id": "ORD-10094",
+      "warehouse_id": "WH-CPT",
+      "carrier": "DHL",
+      "tracking_number": "TRK8834214",
+      "status": "delivered",
+      "shipped_at": "2026-02-07T12:00:00+00:00",
+      "delivered_at": "2026-02-14T12:00:00+00:00",
+      "shipping_cost": 58.25,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-07T12:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-02-14T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8068",
+      "order_id": "ORD-10115",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Aramex",
+      "tracking_number": "TRK7422301",
+      "status": "delivered",
+      "shipped_at": "2026-04-24T22:00:00+00:00",
+      "delivered_at": "2026-05-01T22:00:00+00:00",
+      "shipping_cost": 219.29,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-24T22:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-01T22:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8069",
+      "order_id": "ORD-10027",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Pudo",
+      "tracking_number": "TRK8235234",
+      "status": "in_transit",
+      "shipped_at": "2026-04-27T02:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 157.58,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-27T02:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-04-28T02:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-DUPLICATE",
+      "order_id": "ORD-10016",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Pudo",
+      "tracking_number": "TRK1014556",
+      "status": "in_transit",
+      "shipped_at": "2026-01-13T02:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 161.31,
+      "currency": "USD",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-13T02:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-01-14T02:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8071",
+      "order_id": "ORD-10108",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Pudo",
+      "tracking_number": "TRK2176077",
+      "status": "returned_to_sender",
+      "shipped_at": "2026-03-30T12:00:00+00:00",
+      "delivered_at": "2026-03-27T12:00:00+00:00",
+      "shipping_cost": 45.58,
+      "currency": "",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-30T12:00:00+00:00"
+        },
+        {
+          "event": "returned_to_sender",
+          "timestamp": "2026-03-27T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8072",
+      "order_id": "ORD-10088",
+      "warehouse_id": "WH-DBN",
+      "carrier": "FastWay",
+      "tracking_number": "TRK6705306",
+      "status": "delivered",
+      "shipped_at": "2026-05-22T11:00:00+00:00",
+      "delivered_at": "2026-05-25T11:00:00+00:00",
+      "shipping_cost": 125.44,
+      "currency": "USD",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-22T11:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-25T11:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8073",
+      "order_id": "ORD-10027",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Aramex",
+      "tracking_number": "TRK8348147",
+      "status": "in_transit",
+      "shipped_at": "2026-05-26T01:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 69.49,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-26T01:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-05-27T01:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8074",
+      "order_id": "ORD-10110",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK8538125",
+      "status": "delivered",
+      "shipped_at": "2026-06-05T07:00:00+00:00",
+      "delivered_at": "2026-06-09T07:00:00+00:00",
+      "shipping_cost": 47.87,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-05T07:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-06-09T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8075",
+      "order_id": "ORD-10053",
+      "warehouse_id": "WH-DBN",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK4908850",
+      "status": "delivered",
+      "shipped_at": "2026-01-15T12:00:00+00:00",
+      "delivered_at": "2026-01-16T12:00:00+00:00",
+      "shipping_cost": 51.45,
+      "currency": "zar",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-15T12:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-16T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8076",
+      "order_id": "ORD-10101",
+      "warehouse_id": "WH-CPT",
+      "carrier": "FastWay",
+      "tracking_number": "TRK2632292",
+      "status": "delivered",
+      "shipped_at": "2026-01-09T15:00:00+00:00",
+      "delivered_at": "2026-01-06T15:00:00+00:00",
+      "shipping_cost": 74.87,
+      "currency": "ZAR",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-09T15:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-06T15:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8077",
+      "order_id": "ORD-10019",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK3304005",
+      "status": "label_created",
+      "shipped_at": "2026-05-12T19:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 213.82,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-12T19:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-05-13T19:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8078",
+      "order_id": "ORD-10092",
+      "warehouse_id": "WH-JHB",
+      "carrier": "Aramex",
+      "tracking_number": "TRK8359513",
+      "status": "in_transit",
+      "shipped_at": "2026-02-18T10:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 146.85,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-18T10:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-02-19T10:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-DUPLICATE",
+      "order_id": "ORD-10119",
+      "warehouse_id": "WH-CPT",
+      "carrier": "DHL",
+      "tracking_number": "TRK5760225",
+      "status": "exception",
+      "shipped_at": "2026-06-10T12:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 186.3,
+      "currency": "",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-10T12:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-06-11T12:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8080",
+      "order_id": "ORD-10032",
+      "warehouse_id": "WH-CPT",
+      "carrier": "FastWay",
+      "tracking_number": "TRK9386722",
+      "status": "delivered",
+      "shipped_at": "2026-02-10T20:00:00+00:00",
+      "delivered_at": "2026-02-13T20:00:00+00:00",
+      "shipping_cost": 60.4,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-10T20:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-02-13T20:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8081",
+      "order_id": "ORD-10066",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK8788252",
+      "status": "returned_to_sender",
+      "shipped_at": "2026-01-06T17:00:00+00:00",
+      "delivered_at": "2026-01-08T17:00:00+00:00",
+      "shipping_cost": 160.38,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-06T17:00:00+00:00"
+        },
+        {
+          "event": "returned_to_sender",
+          "timestamp": "2026-01-08T17:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8082",
+      "order_id": "ORD-10030",
+      "warehouse_id": "WH-JHB",
+      "carrier": "FastWay",
+      "tracking_number": null,
+      "status": "exception",
+      "shipped_at": "2026-02-02T04:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 81.68,
+      "currency": "USD",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-02T04:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-02-03T04:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8083",
+      "order_id": "ORD-10096",
+      "warehouse_id": "WH-CPT",
+      "carrier": "FastWay",
+      "tracking_number": "TRK2947249",
+      "status": "exception",
+      "shipped_at": "2026-05-01T01:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 86.18,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-01T01:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-05-02T01:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8084",
+      "order_id": "ORD-10066",
+      "warehouse_id": "WH-CPT",
+      "carrier": "FastWay",
+      "tracking_number": "TRK7922203",
+      "status": "in_transit",
+      "shipped_at": "2026-02-24T23:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 110.72,
+      "currency": "zar",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-24T23:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-02-25T23:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8085",
+      "order_id": "ORD-10072",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK8679606",
+      "status": "in_transit",
+      "shipped_at": "2026-06-03T15:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 155.6,
+      "currency": "USD",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-06-03T15:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-06-04T15:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8086",
+      "order_id": "ORD-10053",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK6764248",
+      "status": "in_transit",
+      "shipped_at": "2026-02-06T01:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 96.65,
+      "currency": "zar",
+      "service_level": "express",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-02-06T01:00:00+00:00"
+        },
+        {
+          "event": "in_transit",
+          "timestamp": "2026-02-07T01:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8087",
+      "order_id": "ORD-10090",
+      "warehouse_id": "WH-CPT",
+      "carrier": "Pudo",
+      "tracking_number": "TRK8182500",
+      "status": "delivered",
+      "shipped_at": "2026-05-26T07:00:00+00:00",
+      "delivered_at": "2026-05-27T07:00:00+00:00",
+      "shipping_cost": 88.16,
+      "currency": "USD",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-26T07:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-05-27T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8088",
+      "order_id": "ORD-10091",
+      "warehouse_id": "WH-JHB",
+      "carrier": "FastWay",
+      "tracking_number": "TRK9459346",
+      "status": "exception",
+      "shipped_at": null,
+      "delivered_at": null,
+      "shipping_cost": 137.95,
+      "currency": "",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-02T18:00:00+00:00"
+        },
+        {
+          "event": "exception",
+          "timestamp": "2026-03-03T18:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8089",
+      "order_id": "ORD-10070",
+      "warehouse_id": "WH-DBN",
+      "carrier": "DHL",
+      "tracking_number": "TRK5962539",
+      "status": "label_created",
+      "shipped_at": "2026-05-11T07:00:00+00:00",
+      "delivered_at": null,
+      "shipping_cost": 219.82,
+      "currency": "ZAR",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-11T07:00:00+00:00"
+        },
+        {
+          "event": "label_created",
+          "timestamp": "2026-05-12T07:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-DUPLICATE",
+      "order_id": "ORD-10102",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK3325723",
+      "status": "delivered",
+      "shipped_at": "2026-03-24T05:00:00+00:00",
+      "delivered_at": "2026-03-31T05:00:00+00:00",
+      "shipping_cost": 115.94,
+      "currency": "USD",
+      "service_level": "same_day",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-03-24T05:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-03-31T05:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8091",
+      "order_id": "ORD-10108",
+      "warehouse_id": "WH-DBN",
+      "carrier": "Pudo",
+      "tracking_number": "TRK4475340",
+      "status": "delivered",
+      "shipped_at": "2026-01-05T20:00:00+00:00",
+      "delivered_at": "2026-01-06T20:00:00+00:00",
+      "shipping_cost": 59.17,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-05T20:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-06T20:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8092",
+      "order_id": "ORD-10079",
+      "warehouse_id": "WH-CPT",
+      "carrier": "DHL",
+      "tracking_number": "TRK2124172",
+      "status": "delivered",
+      "shipped_at": "2026-04-08T01:00:00+00:00",
+      "delivered_at": "2026-04-09T01:00:00+00:00",
+      "shipping_cost": 180.38,
+      "currency": "zar",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-04-08T01:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-04-09T01:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8093",
+      "order_id": "ORD-10037",
+      "warehouse_id": "WH-DBN",
+      "carrier": "DHL",
+      "tracking_number": "TRK4782209",
+      "status": "returned_to_sender",
+      "shipped_at": "2026-05-23T03:00:00+00:00",
+      "delivered_at": "2026-05-30T03:00:00+00:00",
+      "shipping_cost": 202.14,
+      "currency": "",
+      "service_level": "economy",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-05-23T03:00:00+00:00"
+        },
+        {
+          "event": "returned_to_sender",
+          "timestamp": "2026-05-30T03:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "shipment_id": "SHP-8094",
+      "order_id": "ORD-10009",
+      "warehouse_id": "WH-CPT",
+      "carrier": "ManualCourier",
+      "tracking_number": "TRK9939831",
+      "status": "delivered",
+      "shipped_at": "2026-01-21T11:00:00+00:00",
+      "delivered_at": "2026-01-24T11:00:00+00:00",
+      "shipping_cost": 124.1,
+      "currency": "USD",
+      "service_level": "standard",
+      "events": [
+        {
+          "event": "created",
+          "timestamp": "2026-01-21T11:00:00+00:00"
+        },
+        {
+          "event": "delivered",
+          "timestamp": "2026-01-24T11:00:00+00:00"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+order_id,order_line_id,order_date,customer_id,customer_name,customer_email,customer_phone,sku,product_name,category,qty,unit_price,discount_pct,currency,channel,shipping_country,shipping_postal_code,payment_status,order_status,source_system
+ORD-10001,ORD-10001-1,2026-02-02,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU-TEE-002,Retro Mecha Tee,T-Shirts,2,329.0,0,ZAR,instagram_shop,,7441,pending,fulfilled,Marketplace CSV Export
+ORD-10002,ORD-10002-1,01-Mar-2026,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,mug-001,Studio Desk Mug,Mugs,1,149.0,20,ZAR,mobile_app,US,,refunded,fulfilled,Marketplace CSV Export
+ORD-10003,ORD-10003-1,03/05/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,sticker-pack-a,Sticker Pack A,Accessories,1,89.0,0,ZAR,wholesale_portal,south africa,7700,paid,processing,Manual Import
+ORD-10004,ORD-10004-1,19-Jan-2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,cap-001,Pixel Fox Cap,Caps,3,199.0,25,ZAR,marketplace,south africa,7700,paid,fulfilled,Shopfront CSV Export
+ORD-10005,ORD-10005-1,05/11/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,HDY-002,Cyber Cat Hoodie,Hoodies,2,749.0,10,ZAR,marketplace,ZA,10001,paid,fulfilled,Shopfront CSV Export
+ORD-10006,ORD-10006-1,2026-01-05,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,bag-001,Kawaii Canvas Tote,Bags,4,249.0,0,ZAR,marketplace,,7700,paid,processing,Shopfront CSV Export
+ORD-10006,ORD-10006-2,05-Jan-2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,SKU-SOC-001,Neon Socks,Socks,2,119.0,0,ZAR,wholesale_portal,,10001,paid,processing,Shopfront CSV Export
+ORD-10006,ORD-10006-3,05-Jan-2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,TEE001,Moon Ramen Tee,T-Shirts,3,299.0,25,,web,,8001,paid,processing,Manual Import
+ORD-10007,ORD-10007-1,2026/01/20 07:04,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,cap-001,Pixel Fox Cap,Caps,2,199.0,25,ZAR,web,,,paid,fulfilled,Manual Import
+ORD-10008,ORD-10008-1,2026-01-30,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU-CAP-001,Pixel Fox Cap,Caps,2,199.0,0,ZAR,mobile_app,,7700,paid,fulfilled,Marketplace CSV Export
+ORD-10008,ORD-10008-2,30-Jan-2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,HDY-002,Cyber Cat Hoodie,Hoodies,2,749.0,110,ZAR,mobile_app,US,7441,paid,fulfilled,Shopfront CSV Export
+ORD-10008,ORD-10008-3,30-Jan-2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU-TEE-002,Retro Mecha Tee,T-Shirts,2,329.0,0,ZAR,wholesale_portal,,8001,paid,fulfilled,Manual Import
+ORD-10009,ORD-10009-1,2026-04-18,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,SKU_TEE_002,Retro Mecha Tee,T-Shirts,1,329.0,20,ZAR,web,US,8001,paid,processing,Manual Import
+ORD-10009,ORD-10009-2,18-Apr-2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,HDY001,anime cloud hoodie,Hoodies,2,699.0,5,zar,marketplace,south africa,,paid,processing,Shopfront CSV Export
+ORD-10010,ORD-10010-1,2026-03-13,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,SKU-SOC-001,Neon Socks,Socks,3,119.0,25,ZAR,marketplace,ZA,7700,paid,fulfilled,Manual Import
+ORD-10011,ORD-10011-1,2026-05-26,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,HDY001,Anime Cloud Hoodie,Hoodies,2,699.0,20,ZAR,mobile_app,US,,partial_refund,fulfilled,Shopfront CSV Export
+ORD-10011,ORD-10011-2,2026/05/26 22:27,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,SKU_HDY_002,cyber cat hoodie,Hoodies,4,37.83,0,EUR,marketplace,RSA,,partial_refund,fulfilled,Marketplace CSV Export
+ORD-10012,ORD-10012-1,03/09/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,HDY-002,Cyber Cat Hoodie,Hoodies,1,749.0,0,ZAR,wholesale_portal,UK,7441,paid,partially_returned,Shopfront CSV Export
+ORD-10012,ORD-10012-2,09-Mar-2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU-MUG-001,Studio Desk Mug,Mugs,1,149.0,0,,mobile_app,United States,7441,paid,partially_returned,Shopfront CSV Export
+ORD-10012,ORD-10012-3,2026-03-09,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU_HDY_001,Anime Cloud Hoodie,Hoodies,1,699.0,5,ZAR,marketplace,South Africa,,paid,partially_returned,Marketplace CSV Export
+ORD-10013,ORD-10013-1,2026/04/18 22:18,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,TEE001,Moon Ramen Tee,T-Shirts,2,299.0,10,ZAR,instagram_shop,UK,,failed,fulfilled,Manual Import
+ORD-10013,ORD-10013-2,2026-04-18,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,TEE002,Retro Mecha Tee,T-Shirts,3,329.0,15,ZAR,wholesale_portal,RSA,,failed,fulfilled,Shopfront CSV Export
+ORD-10014,ORD-10014-1,2026/04/21 20:36,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,mug-001,Studio Desk Mug,Mugs,0,149.0,25,ZAR,wholesale_portal,RSA,7441,paid,Fulfilled,Marketplace CSV Export
+ORD-10015,ORD-10015-1,05/14/2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,sticker-pack-a,Sticker Pack A,Accessories,4,89.0,25,ZAR,mobile_app,US,7700,paid,cancelled,Shopfront CSV Export
+ORD-10015,ORD-10015-2,14-May-2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU_TEE_001,Moon Ramen Tee,T-SHIRTS,3,299.0,15,ZAR,wholesale_portal,UK,10001,paid,cancelled,Marketplace CSV Export
+ORD-10016,ORD-10016-1,05-Apr-2026,CUST-0001,A. Daniels,a.daniels@example.com,+27 82 111 0001,mug-001,Studio Desk Mug,Mugs,1,149.0,20,ZAR,wholesale_portal,UK,SW1A 1AA,paid,cancelled,Manual Import
+ORD-10016,ORD-10016-2,2026/04/05 09:48,CUST-0001,A. Daniels,a.daniels@example.com,+27 82 111 0001,SKU-SOC-001,Neon Socks,Socks,1,119.0,0,ZAR,instagram_shop,United States,7441,paid,cancelled,Shopfront CSV Export
+ORD-10017,ORD-10017-1,09/01/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,cap-001,Pixel Fox Cap,Caps,1,199.0,0,zar,marketplace,RSA,7700,paid,fulfilled,Manual Import
+ORD-10018,ORD-10018-1,03-Feb-2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,jkt-rain-l,Rain City Jacket,Jackets,2,1299.0,5,ZAR,instagram_shop,US,,paid,fulfilled,Marketplace CSV Export
+ORD-10019,ORD-10019-1,2026/05/14 20:21,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,MUG001,Studio Desk Mug,Mugs,3,149.0,0,ZAR,marketplace,US,7441,paid,returned,Shopfront CSV Export
+ORD-10020,ORD-10020-1,17/03/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,JKT001,Rain City Jacket,Jackets,1,1299.0,10,ZAR,mobile_app,US,,paid,fulfilled,Marketplace CSV Export
+ORD-10020,ORD-10020-2,17-Mar-2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,mug-001,Studio Desk Mug,Mugs,3,149.0,5,ZAR,wholesale_portal,RSA,7441,paid,fulfilled,Marketplace CSV Export
+ORD-10021,ORD-10021-1,05/01/2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SKU-TEE-002,Retro Mecha Tee,T-Shirts,3,329.0,5,ZAR,marketplace,US,7700,paid,fulfilled,Marketplace CSV Export
+ORD-10022,ORD-10022-1,2026-03-23,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,tee-001,Moon Ramen Tee,T-Shirts,3,299.0,0,ZAR,web,US,,paid,fulfilled,Shopfront CSV Export
+ORD-10022,ORD-10022-2,2026/03/23 00:45,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,SKU_BAG_001,Kawaii Canvas Tote,Bags,2,249.0,0,ZAR,mobile_app,US,,paid,fulfilled,Manual Import
+ORD-10023,ORD-10023-1,30-Apr-2026,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,mug-001,Studio Desk Mug,MUGS,1,149.0,0,ZAR,marketplace,south africa,,paid,processing,Marketplace CSV Export
+ORD-10023,ORD-10023-2,30/04/2026,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,SKU_BAG_001,Kawaii Canvas Tote,Bags,1,249.0,5,zar,marketplace,,SW1A 1AA,paid,processing,Manual Import
+ORD-10024,ORD-10024-1,19-Mar-2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU_BAG_001,Kawaii Canvas Tote,BAGS,2,249.0,15,ZAR,marketplace,ZA,SW1A 1AA,paid,on hold,Shopfront CSV Export
+ORD-10024,ORD-10024-2,03/19/2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU-MUG-001,Studio Desk Mug,Mugs,2,149.0,20,ZAR,marketplace,,10001,paid,on hold,Manual Import
+ORD-10025,ORD-10025-1,2026/03/19 21:25,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,SKU-HDY-001,Anime Cloud Hoodie,Hoodies,4,699.0,25,ZAR,wholesale_portal,RSA,7700,paid,fulfilled,Marketplace CSV Export
+ORD-10025,ORD-10025-2,2026-03-19,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,STK-A,Sticker Pack A,Accessories,3,89.0,5,ZAR,mobile_app,US,10001,paid,fulfilled,Manual Import
+ORD-10026,ORD-10026-1,2026-05-15,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,STK-A,Sticker Pack A,Accessories,1,89.0,0,ZAR,wholesale_portal,UK,SW1A 1AA,paid,fulfilled,Manual Import
+ORD-10026,ORD-10026-2,2026/05/15 22:17,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,JKT001,Rain City Jacket,Jackets,4,1299.0,20,ZAR,web,United States,7441,paid,fulfilled,Manual Import
+ORD-10027,ORD-10027-1,04/12/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,tee-001,Moon Ramen Tee,T-Shirts,4,16.43,-5,USD,web,UK,,failed,fulfilled,Marketplace CSV Export
+ORD-10027,ORD-10027-2,2026-04-12,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,STK-A,Sticker Pack A,Accessories,1,4.49,0,EUR,web,RSA,10001,failed,fulfilled,Shopfront CSV Export
+ORD-10027,ORD-10027-3,12/04/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,hdy-001,Anime Cloud Hoodie,Hoodies,1,699.0,15,ZAR,instagram_shop,RSA,SW1A 1AA,failed,fulfilled,Manual Import
+ORD-10028,ORD-10028-1,05/12/2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,SKU-STK-001,Sticker Pack A,Accessories,4,89.0,0,ZAR,instagram_shop,United States,,paid,processing,Marketplace CSV Export
+ORD-10029,ORD-10029-1,06/03/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,SKU-JKT-001,Rain City Jacket,Jackets,4,1299.0,0,ZAR,mobile_app,,SW1A 1AA,Paid ,fulfilled,Marketplace CSV Export
+ORD-10030,ORD-10030-1,02/09/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,HDY001,Anime Cloud Hoodie,Hoodies,1,699.0,5,ZAR,instagram_shop,,,paid,fulfilled,Marketplace CSV Export
+ORD-10030,ORD-10030-2,2026/02/09 20:06,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,bag-001,kawaii canvas tote,Bags,4,249.0,5,,instagram_shop,UK,7441,paid,fulfilled,Manual Import
+ORD-10030,ORD-10030-3,2026/02/09 20:06,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,sticker-pack-a,Sticker Pack A,Accessories,2,89.0,5,ZAR,instagram_shop,,8001,paid,fulfilled,Shopfront CSV Export
+ORD-10031,ORD-10031-1,14-Jan-2026,CUST-0001,A. Daniels,a.daniels@example.com,+27 82 111 0001,HDY-002,Cyber Cat Hoodie,Hoodies,2,749.0,20,zar,web,south africa,,paid,fulfilled,Marketplace CSV Export
+ORD-10032,ORD-10032-1,04/28/2026,CUST-0004,S. Khan,s.khan@example.com,,SKU_HDY_002,Cyber Cat Hoodie,Hoodies,1,749.0,25,ZAR,wholesale_portal,RSA,7700,paid,on hold,Shopfront CSV Export
+ORD-10033,ORD-10033-1,27/02/2026,CUST-0009,R. van Wyk,,,cap-001,Pixel Fox Cap,CAPS,1,199.0,10,,marketplace,South Africa,8001,pending,cancelled,Shopfront CSV Export
+ORD-10034,ORD-10034-1,2026-04-22,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SKU-HDY-002,Cyber Cat Hoodie,Hoodies,2,749.0,10,zar,web,ZA,8001,paid,cancelled,Marketplace CSV Export
+ORD-10034,ORD-10034-2,2026-04-22,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,STK001,Sticker Pack A,Accessories,1,89.0,15,ZAR,wholesale_portal,,,paid,cancelled,Shopfront CSV Export
+ORD-10034,ORD-10034-3,22/04/2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SOC001,Neon Socks,Socks,2,119.0,20,ZAR,web,South Africa,,paid,cancelled,Shopfront CSV Export
+ORD-10035,ORD-10035-1,25-Apr-2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,CAP001,Pixel Fox Cap,Caps,3,199.0,20,ZAR,instagram_shop,ZA,7700,paid,processing,Shopfront CSV Export
+ORD-10035,ORD-10035-2,25-Apr-2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,tee-001,moon ramen tee,T-Shirts,4,299.0,5,ZAR,marketplace,,8001,paid,processing,Shopfront CSV Export
+ORD-10035,ORD-10035-3,2026-04-25,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,hdy-001,Anime Cloud Hoodie,Hoodies,3,699.0,0,zar,instagram_shop,UK,10001,paid,processing,Marketplace CSV Export
+ORD-10036,ORD-10036-1,09-Apr-2026,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,SKU-JKT-001,Rain City Jacket,Jackets,1,1299.0,25,ZAR,marketplace,,,partial_refund,processing,Manual Import
+ORD-10037,ORD-10037-1,2026/05/09 16:42,CUST-0010,P. Mokoena,pmokoena@examplecom,+27 82 111 0010,SKU-HDY-001,Anime Cloud Hoodie,Hoodies,1,699.0,10,zar,wholesale_portal,South Africa,,failed,fulfilled,Manual Import
+ORD-10038,ORD-10038-1,2026/01/23 12:55,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,hdy-001,Anime Cloud Hoodie,Hoodies,2,699.0,10,ZAR,web,ZA,10001,paid,Fulfilled,Shopfront CSV Export
+ORD-10038,ORD-10038-2,2026-01-23,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SKU-MUG-001,Studio Desk Mug,Mugs,2,149.0,10,ZAR,marketplace,RSA,7441,paid,Fulfilled,Manual Import
+ORD-10038,ORD-10038-3,23-Jan-2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,jkt-rain-l,Rain City Jacket,Jackets,4,1299.0,0,ZAR,wholesale_portal,South Africa,,paid,Fulfilled,Manual Import
+ORD-10039,ORD-10039-1,2026-03-28,CUST-0010,P. Mokoena,pmokoena@examplecom,+27 82 111 0010,sticker-pack-a,Sticker Pack A,Accessories,4,89.0,10,ZAR,instagram_shop,ZA,SW1A 1AA,paid,fulfilled,Manual Import
+ORD-10040,ORD-10040-1,15-Jan-2026,CUST-0012,Z. Omar,zomar@examplecom,+27 82 111 0012,SKU-TEE-002,Retro Mecha Tee,T-Shirts,2,329.0,0,zar,marketplace,south africa,7441,paid,processing,Marketplace CSV Export
+ORD-10040,ORD-10040-2,15-Jan-2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,CAP001,Pixel Fox Cap,Caps,4,199.0,15,ZAR,wholesale_portal,South Africa,,paid,processing,Shopfront CSV Export
+ORD-10041,ORD-10041-1,25/03/2026,CUST-0006,J. Petersen,,+27 82 111 0006,MUG001,Studio Desk Mug,Mugs,4,149.0,0,ZAR,mobile_app,UK,7700,paid,fulfilled,Shopfront CSV Export
+ORD-10041,ORD-10041-2,25-Mar-2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,TEE001,Moon Ramen Tee,T-Shirts,1,299.0,0,ZAR,instagram_shop,south africa,8001,paid,fulfilled,Marketplace CSV Export
+ORD-10041,ORD-10041-3,25/03/2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SKU_HDY_002,Cyber Cat Hoodie,Hoodies,3,749.0,25,,instagram_shop,RSA,10001,paid,fulfilled,Marketplace CSV Export
+ORD-10042,ORD-10042-1,05/13/2026,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,SKU_TEE_002,Retro Mecha Tee,T-Shirts,1,16.62,0,EUR,instagram_shop,,8001,paid,returned,Shopfront CSV Export
+ORD-10043,ORD-10043-1,04/04/2026,CUST-0008,T. Williams,twilliams@examplecom,+27 82 111 0008,SKU-MUG-001,Studio Desk Mug,Mugs,1,149.0,15,ZAR,wholesale_portal,south africa,8001,paid,processing,Shopfront CSV Export
+ORD-10044,ORD-10044-1,11-Mar-2026,CUST-0001,A. Daniels,a.daniels@example.com,+27 82 111 0001,SOC001,neon socks,Socks,1,119.0,5,ZAR,mobile_app,,,PAID,on hold,Shopfront CSV Export
+ORD-10045,ORD-10045-1,2026-04-24,CUST-0005,L. Smith,lsmith@examplecom,+27 82 111 0005,SKU-TEE-002,Retro Mecha Tee,T-Shirts,2,329.0,0,ZAR,mobile_app,,,paid,processing,Manual Import
+ORD-10046,ORD-10046-1,31/01/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,TEE001,Moon Ramen Tee,T-Shirts,4,299.0,0,ZAR,web,South Africa,7441,paid,fulfilled,Marketplace CSV Export
+ORD-10047,ORD-10047-1,2026/04/16 17:30,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,hdy-001,Anime Cloud Hoodie,Hoodies,4,38.41,0,USD,instagram_shop,UK,7441,paid,cancelled,Manual Import
+ORD-10048,ORD-10048-1,01/26/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,mug-001,Studio Desk Mug,Mugs,1,149.0,10,ZAR,web,UK,8001,refunded,processing,Manual Import
+ORD-10049,ORD-10049-1,04/18/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU_TEE_001,Moon Ramen Tee,T-Shirts,1,299.0,15,ZAR,mobile_app,ZA,SW1A 1AA,PAID,returned,Marketplace CSV Export
+ORD-10049,ORD-10049-2,2026/04/18 11:32,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU_HDY_001,Anime Cloud Hoodie,Hoodies,1,699.0,0,ZAR,instagram_shop,UK,7700,PAID,returned,Shopfront CSV Export
+ORD-10049,ORD-10049-3,04/18/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU-JKT-001,Rain City Jacket,Jackets,4,1299.0,0,ZAR,mobile_app,United States,,PAID,returned,Marketplace CSV Export
+ORD-10050,ORD-10050-1,2026/03/03 03:12,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU_TEE_002,Retro Mecha Tee,T-Shirts,2,329.0,0,ZAR,marketplace,UK,,paid,returned,Shopfront CSV Export
+ORD-10051,ORD-10051-1,04/05/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,TEE001,Moon Ramen Tee,T-Shirts,4,299.0,0,ZAR,marketplace,,,pending,partially_returned,Shopfront CSV Export
+ORD-10052,ORD-10052-1,2026-02-24,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,SKU-TEE-001,Moon Ramen Tee,T-Shirts,2,299.0,0,ZAR,wholesale_portal,United States,7441,PAID,processing,Manual Import
+ORD-10053,ORD-10053-1,05/31/2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,HDY001,Anime Cloud Hoodie,Hoodies,4,699.0,0,ZAR,marketplace,UK,10001,paid,processing,Shopfront CSV Export
+ORD-10053,ORD-10053-2,31-May-2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,sticker-pack-a,Sticker Pack A,Accessories,2,89.0,10,ZAR,mobile_app,south africa,,paid,processing,Marketplace CSV Export
+ORD-10053,ORD-10053-3,31/05/2026,CUST-0004,S. Khan,skhan@examplecom,+27 82 111 0004,bag-001,Kawaii Canvas Tote,Bags,1,249.0,25,ZAR,web,,7441,paid,processing,Marketplace CSV Export
+ORD-10054,ORD-10054-1,05/05/2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU_HDY_002,Cyber Cat Hoodie,Hoodies,4,749.0,5,ZAR,wholesale_portal,US,8001,partial_refund,fulfilled,Shopfront CSV Export
+ORD-10055,ORD-10055-1,15/04/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,SKU-SOC-001,Neon Socks,Socks,2,119.0,0,ZAR,mobile_app,,10001,pending,on hold,Manual Import
+ORD-10056,ORD-10056-1,22-Mar-2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SOC001,Neon Socks,Socks,-1,119.0,10,ZAR,wholesale_portal,ZA,10001,paid,Fulfilled,Shopfront CSV Export
+ORD-10056,ORD-10056-2,2026/03/22 18:21,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,jkt-rain-l,Rain City Jacket,Jackets,3,1299.0,5,ZAR,wholesale_portal,South Africa,10001,paid,Fulfilled,Manual Import
+ORD-10057,ORD-10057-1,20-Jan-2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,tee002,Retro Mecha Tee,T-Shirts,1,329.0,15,ZAR,marketplace,US,,PAID,fulfilled,Marketplace CSV Export
+ORD-10057,ORD-10057-2,20/01/2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,sock-neon-m,Neon Socks,Socks,1,119.0,10,ZAR,web,,7441,PAID,fulfilled,Marketplace CSV Export
+ORD-10058,ORD-10058-1,03/11/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU_TEE_002,Retro Mecha Tee,T-Shirts,1,329.0,0,ZAR,mobile_app,,8001,paid,returned,Manual Import
+ORD-10059,ORD-10059-1,19/04/2026,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,sticker-pack-a,Sticker Pack A,ACCESSORIES,3,89.0,5,ZAR,instagram_shop,ZA,,paid,cancelled,Marketplace CSV Export
+ORD-10059,ORD-10059-2,19-Apr-2026,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,TEE002,Retro Mecha Tee,T-Shirts,3,329.0,0,zar,mobile_app,South Africa,,paid,cancelled,Manual Import
+ORD-10060,ORD-10060-1,2026-03-15,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,CAP001,Pixel Fox Cap,Caps,3,199.0,5,ZAR,marketplace,UK,7700,paid,fulfilled,Shopfront CSV Export
+ORD-10061,ORD-10061-1,04/13/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,SKU-CAP-001,Pixel Fox Cap,Caps,1,199.0,0,ZAR,marketplace,south africa,7441,pending,fulfilled,Manual Import
+ORD-10062,ORD-10062-1,02-Mar-2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,STK-A,Sticker Pack A,Accessories,3,89.0,5,ZAR,wholesale_portal,South Africa,7700,PAID,cancelled,Manual Import
+ORD-10063,ORD-10063-1,02/12/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,STK-A,Sticker Pack A,Accessories,1,89.0,0,ZAR,web,,,Paid ,processing,Shopfront CSV Export
+ORD-10063,ORD-10063-2,12/02/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU-HDY-002,Cyber Cat Hoodie,Hoodies,1,749.0,0,ZAR,instagram_shop,South Africa,7441,Paid ,processing,Marketplace CSV Export
+ORD-10064,ORD-10064-1,11/04/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,SOC001,Neon Socks,Socks,2,119.0,0,,marketplace,,7700,failed,fulfilled,Manual Import
+ORD-10064,ORD-10064-2,2026-04-11,CUST-0008,T. Williams,,+27 82 111 0008,SKU-TEE-001,Moon Ramen Tee,T-SHIRTS,1,299.0,0,ZAR,instagram_shop,South Africa,7700,failed,fulfilled,Manual Import
+ORD-10064,ORD-10064-3,11/04/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,SKU-CAP-001,Pixel Fox Cap,Caps,4,199.0,10,ZAR,wholesale_portal,United States,7700,failed,fulfilled,Marketplace CSV Export
+ORD-10065,ORD-10065-1,16/03/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,tee-001,Moon Ramen Tee,T-Shirts,3,299.0,20,ZAR,instagram_shop,US,8001,paid,processing,Manual Import
+ORD-10065,ORD-10065-2,16/03/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,MUG001,Studio Desk Mug,Mugs,2,149.0,5,ZAR,wholesale_portal,South Africa,SW1A 1AA,paid,processing,Shopfront CSV Export
+ORD-10066,ORD-10066-1,02/22/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,SOC001,Neon Socks,Socks,1,119.0,25,ZAR,marketplace,RSA,7441,partial_refund,fulfilled,Marketplace CSV Export
+ORD-10066,ORD-10066-2,22-Feb-2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,SKU_TEE_002,Retro Mecha Tee,T-Shirts,2,329.0,25,ZAR,web,United States,7441,partial_refund,fulfilled,Manual Import
+ORD-10066,ORD-10066-3,2026/02/22 18:46,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,STK-A,Sticker Pack A,Accessories,1,89.0,5,ZAR,marketplace,United States,7700,partial_refund,fulfilled,Shopfront CSV Export
+ORD-10067,ORD-10067-1,2026/05/24 15:11,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SKU-HDY-001,Anime Cloud Hoodie,HOODIES,0,38.41,110,USD,wholesale_portal,United States,SW1A 1AA,refunded,fulfilled,Marketplace CSV Export
+ORD-10067,ORD-10067-2,2026-05-24,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SKU-SOC-001,Neon Socks,Socks,1,119.0,0,ZAR,wholesale_portal,UK,SW1A 1AA,refunded,fulfilled,Marketplace CSV Export
+ORD-10068,ORD-10068-1,14/03/2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,mug-001,Studio Desk Mug,Mugs,1,8.19,0,USD,marketplace,UK,SW1A 1AA,paid,Fulfilled,Shopfront CSV Export
+ORD-10069,ORD-10069-1,2026-01-15,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,JKT001,Rain City Jacket,Jackets,2,1299.0,-5,ZAR,wholesale_portal,south africa,,paid,fulfilled,Marketplace CSV Export
+ORD-10069,ORD-10069-2,01/15/2026,CUST-0009,R. van Wyk,rvanwyk@examplecom,+27 82 111 0009,sticker-pack-a,Sticker Pack A,Accessories,2,89.0,0,ZAR,wholesale_portal,United States,10001,paid,fulfilled,Marketplace CSV Export
+ORD-10069,ORD-10069-3,2026-01-15,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU-BAG-001,Kawaii Canvas Tote,Bags,3,249.0,15,,mobile_app,UK,,paid,fulfilled,Shopfront CSV Export
+ORD-10070,ORD-10070-1,03/14/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,,tee-001,Moon Ramen Tee,T-Shirts,2,299.0,0,ZAR,marketplace,,,paid,fulfilled,Marketplace CSV Export
+ORD-10070,ORD-10070-2,03/14/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,SKU-MUG-001,Studio Desk Mug,Mugs,1,149.0,5,ZAR,instagram_shop,south africa,7441,paid,fulfilled,Marketplace CSV Export
+ORD-10070,ORD-10070-3,2026/03/14 04:24,CUST-0002,Aqeelah Yon,aqeelah@example.com,,CAP001,Pixel Fox Cap,Caps,2,199.0,25,ZAR,marketplace,RSA,10001,paid,fulfilled,Marketplace CSV Export
+ORD-10071,ORD-10071-1,08-Feb-2026,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,SKU_TEE_002,Retro Mecha Tee,T-Shirts,1,329.0,5,ZAR,mobile_app,US,,failed,fulfilled,Manual Import
+ORD-10071,ORD-10071-2,2026/02/08 09:20,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,SKU-STK-001,Sticker Pack A,Accessories,3,89.0,10,ZAR,marketplace,South Africa,,failed,fulfilled,Shopfront CSV Export
+ORD-10072,ORD-10072-1,2026-04-23,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,jkt-rain-l,Rain City Jacket,Jackets,2,1299.0,0,ZAR,instagram_shop,RSA,,paid,processing,Marketplace CSV Export
+ORD-10072,ORD-10072-2,23/04/2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,STK-A,Sticker Pack A,ACCESSORIES,-1,89.0,5,ZAR,web,UK,7441,paid,processing,Marketplace CSV Export
+ORD-10073,ORD-10073-1,2026-02-03,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,SKU_BAG_001,Kawaii Canvas Tote,Bags,1,249.0,15,ZAR,mobile_app,ZA,SW1A 1AA,pending,fulfilled,Shopfront CSV Export
+ORD-10074,ORD-10074-1,2026-02-14,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,STK001,Sticker Pack A,Accessories,3,89.0,5,ZAR,wholesale_portal,UK,7700,PAID,returned,Marketplace CSV Export
+ORD-10074,ORD-10074-2,14-Feb-2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU_TEE_002,Retro Mecha Tee,T-Shirts,1,329.0,15,ZAR,marketplace,UK,SW1A 1AA,PAID,returned,Manual Import
+ORD-10075,ORD-10075-1,08-Feb-2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,BAG001,Kawaii Canvas Tote,Bags,2,249.0,20,ZAR,mobile_app,,7441,paid,fulfilled,Marketplace CSV Export
+ORD-10076,ORD-10076-1,18/01/2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU_TEE_001,Moon Ramen Tee,T-Shirts,2,299.0,25,ZAR,instagram_shop,ZA,SW1A 1AA,failed,returned,Manual Import
+ORD-10076,ORD-10076-2,2026/01/18 11:00,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,tee002,Retro Mecha Tee,T-Shirts,2,329.0,15,ZAR,mobile_app,ZA,7441,failed,returned,Shopfront CSV Export
+ORD-10077,ORD-10077-1,13-Mar-2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,STK001,Sticker Pack A,Accessories,1,89.0,20,ZAR,wholesale_portal,south africa,7700,paid,partially_returned,Marketplace CSV Export
+ORD-10078,ORD-10078-1,03/20/2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SKU-SOC-001,Neon Socks,Socks,1,119.0,10,ZAR,instagram_shop,south africa,10001,PAID,on hold,Shopfront CSV Export
+ORD-10079,ORD-10079-1,2026-03-14,CUST-0010,P. Mokoena,,+27 82 111 0010,SKU-STK-001,Sticker Pack A,Accessories,2,89.0,15,ZAR,marketplace,,,partial_refund,processing,Shopfront CSV Export
+ORD-10079,ORD-10079-2,03/14/2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,HDY-002,Cyber Cat Hoodie,Hoodies,1,41.15,15,USD,web,United States,8001,partial_refund,processing,Manual Import
+ORD-10080,ORD-10080-1,09/01/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,STK-A,Sticker Pack A,Accessories,1,89.0,10,zar,mobile_app,US,10001,failed,Fulfilled,Manual Import
+ORD-10081,ORD-10081-1,2026-01-29,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,HDY-002,Cyber Cat Hoodie,Hoodies,-1,749.0,20,ZAR,marketplace,,7700,paid,processing,Marketplace CSV Export
+ORD-10081,ORD-10081-2,29/01/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,TEE001,Moon Ramen Tee,T-Shirts,3,299.0,0,ZAR,instagram_shop,south africa,,paid,processing,Shopfront CSV Export
+ORD-10082,ORD-10082-1,01/30/2026,CUST-0002,Aqeelah Yon,aqeelah@example.com,+27 82 111 0002,JKT001,Rain City Jacket,Jackets,1,1299.0,5,ZAR,mobile_app,US,,paid,cancelled,Marketplace CSV Export
+ORD-10083,ORD-10083-1,2026-01-18,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,SKU-HDY-002,Cyber Cat Hoodie,HOODIES,1,749.0,20,ZAR,mobile_app,south africa,8001,paid,Fulfilled,Shopfront CSV Export
+ORD-10083,ORD-10083-2,2026-01-18,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,tee002,Retro Mecha Tee,T-Shirts,2,329.0,20,ZAR,mobile_app,South Africa,,paid,Fulfilled,Shopfront CSV Export
+ORD-10084,ORD-10084-1,29/03/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU-HDY-002,Cyber Cat Hoodie,Hoodies,1,749.0,0,ZAR,wholesale_portal,south africa,,refunded,cancelled,Manual Import
+ORD-10084,ORD-10084-2,03/29/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,bag-001,Kawaii Canvas Tote,Bags,1,249.0,0,ZAR,web,ZA,10001,refunded,cancelled,Marketplace CSV Export
+ORD-10084,ORD-10084-3,29-Mar-2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,mug-001,studio desk mug,Mugs,1,8.19,0,USD,web,South Africa,7700,refunded,cancelled,Shopfront CSV Export
+ORD-10085,ORD-10085-1,08/04/2026,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,SKU_TEE_001,Moon Ramen Tee,T-Shirts,1,299.0,10,ZAR,instagram_shop,United States,8001,partial_refund,on hold,Marketplace CSV Export
+ORD-10086,ORD-10086-1,25/03/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,sticker-pack-a,sticker pack a,Accessories,3,89.0,25,ZAR,mobile_app,RSA,SW1A 1AA,paid,fulfilled,Marketplace CSV Export
+ORD-10086,ORD-10086-2,25/03/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,SKU-HDY-001,Anime Cloud Hoodie,Hoodies,-1,38.41,0,USD,mobile_app,RSA,,paid,fulfilled,Manual Import
+ORD-10087,ORD-10087-1,04/10/2026,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,JKT001,Rain City Jacket,Jackets,1,1299.0,0,ZAR,web,US,7700,paid,fulfilled,Shopfront CSV Export
+ORD-10088,ORD-10088-1,02/01/2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,sticker-pack-a,Sticker Pack A,Accessories,4,89.0,0,ZAR,marketplace,US,10001,paid,Fulfilled,Manual Import
+ORD-10089,ORD-10089-1,2026/03/22 08:52,CUST-0001,A. Daniels,a.daniels@example.com,+27 82 111 0001,HDY-001,Anime Cloud Hoodie,Hoodies,3,699.0,0,ZAR,web,ZA,SW1A 1AA,partial_refund,on hold,Manual Import
+ORD-10090,ORD-10090-1,01/24/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,sticker-pack-a,Sticker Pack A,Accessories,1,89.0,20,ZAR,marketplace,UK,10001,paid,returned,Shopfront CSV Export
+ORD-10091,ORD-10091-1,03/08/2026,CUST-0001,A. Daniels,a.daniels@example.com,+27 82 111 0001,MUG001,Studio Desk Mug,Mugs,1,149.0,5,ZAR,marketplace,,SW1A 1AA,paid,Fulfilled,Manual Import
+ORD-10091,ORD-10091-2,08-Mar-2026,CUST-0001,A. Daniels,adaniels@examplecom,+27 82 111 0001,SOC001,Neon Socks,Socks,2,119.0,0,ZAR,web,US,7700,paid,Fulfilled,Manual Import
+ORD-10092,ORD-10092-1,14/03/2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,HDY001,Anime Cloud Hoodie,Hoodies,1,699.0,15,ZAR,instagram_shop,ZA,SW1A 1AA,refunded,fulfilled,Marketplace CSV Export
+ORD-10092,ORD-10092-2,03/14/2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,TEE002,Retro Mecha Tee,T-Shirts,2,329.0,0,ZAR,marketplace,ZA,8001,refunded,fulfilled,Shopfront CSV Export
+ORD-10092,ORD-10092-3,03/14/2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,SKU-MUG-001,Studio Desk Mug,Mugs,2,149.0,15,ZAR,mobile_app,United States,,refunded,fulfilled,Marketplace CSV Export
+ORD-10093,ORD-10093-1,09-May-2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SOC001,neon socks,Socks,1,119.0,10,ZAR,wholesale_portal,ZA,7700,partial_refund,processing,Manual Import
+ORD-10094,ORD-10094-1,2026-01-31,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,HDY002,Cyber Cat Hoodie,HOODIES,3,749.0,15,ZAR,instagram_shop,US,,failed,fulfilled,Marketplace CSV Export
+ORD-10095,ORD-10095-1,2026/04/20 15:56,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,cap-001,Pixel Fox Cap,Caps,3,199.0,0,ZAR,web,United States,7441,refunded,fulfilled,Manual Import
+ORD-10095,ORD-10095-2,20-Apr-2026,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,sock-neon-m,Neon Socks,Socks,2,119.0,20,ZAR,marketplace,South Africa,,refunded,fulfilled,Marketplace CSV Export
+ORD-10096,ORD-10096-1,2026/03/06 03:03,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,JKT001,Rain City Jacket,Jackets,1,1299.0,25,ZAR,instagram_shop,ZA,10001,paid,returned,Marketplace CSV Export
+ORD-10096,ORD-10096-2,03/06/2026,CUST-0005,L. Smith,lsmith@examplecom,+27 82 111 0005,sock-neon-m,Neon Socks,Socks,1,119.0,20,ZAR,web,,8001,paid,returned,Manual Import
+ORD-10097,ORD-10097-1,23-May-2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,tee002,Retro Mecha Tee,T-Shirts,2,329.0,5,zar,wholesale_portal,South Africa,7700,paid,fulfilled,Shopfront CSV Export
+ORD-10097,ORD-10097-2,23/05/2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SOC001,Neon Socks,Socks,1,119.0,5,ZAR,web,UK,8001,paid,fulfilled,Marketplace CSV Export
+ORD-10098,ORD-10098-1,04/16/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,sock-neon-m,Neon Socks,Socks,2,119.0,0,ZAR,instagram_shop,South Africa,7441,partial_refund,Fulfilled,Marketplace CSV Export
+ORD-10099,ORD-10099-1,2026-05-09,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,HDY-001,Anime Cloud Hoodie,Hoodies,3,699.0,15,ZAR,marketplace,ZA,7441,paid,fulfilled,Marketplace CSV Export
+ORD-10099,ORD-10099-2,2026/05/09 18:38,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU-TEE-001,Moon Ramen Tee,T-Shirts,4,299.0,15,ZAR,marketplace,UK,,paid,fulfilled,Shopfront CSV Export
+ORD-10100,ORD-10100-1,02/14/2026,CUST-0009,R. van Wyk,rvanwyk@examplecom,+27 82 111 0009,sock-neon-m,Neon Socks,Socks,1,6.01,0,EUR,web,,,paid,returned,Shopfront CSV Export
+ORD-10100,ORD-10100-2,2026-02-14,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU-MUG-001,Studio Desk Mug,Mugs,1,149.0,25,ZAR,mobile_app,United States,,paid,returned,Manual Import
+ORD-10100,ORD-10100-3,2026-02-14,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,TEE001,Moon Ramen Tee,T-Shirts,4,299.0,20,ZAR,marketplace,ZA,,paid,returned,Manual Import
+ORD-10101,ORD-10101-1,03/16/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,cap-001,Pixel Fox Cap,Caps,2,199.0,15,ZAR,marketplace,US,,paid,fulfilled,Manual Import
+ORD-10101,ORD-10101-2,03/16/2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,sticker-pack-a,Sticker Pack A,Accessories,1,89.0,20,ZAR,web,south africa,SW1A 1AA,paid,fulfilled,Manual Import
+ORD-10102,ORD-10102-1,22/02/2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU_TEE_002,Retro Mecha Tee,T-Shirts,4,329.0,10,ZAR,web,south africa,7700,PAID,partially_returned,Marketplace CSV Export
+ORD-10102,ORD-10102-2,22-Feb-2026,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU-SOC-001,Neon Socks,Socks,3,119.0,15,ZAR,instagram_shop,US,7700,PAID,partially_returned,Manual Import
+ORD-10102,ORD-10102-3,2026/02/22 10:46,CUST-0010,P. Mokoena,p.mokoena@example.com,+27 82 111 0010,SKU-STK-001,Sticker Pack A,Accessories,4,89.0,0,ZAR,mobile_app,RSA,,PAID,partially_returned,Shopfront CSV Export
+ORD-10103,ORD-10103-1,2026/03/31 20:11,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,HDY001,anime cloud hoodie,Hoodies,2,699.0,0,ZAR,marketplace,UK,8001,paid,fulfilled,Marketplace CSV Export
+ORD-10104,ORD-10104-1,22-Feb-2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU_TEE_002,Retro Mecha Tee,T-Shirts,1,329.0,0,ZAR,mobile_app,US,7441,partial_refund,fulfilled,Marketplace CSV Export
+ORD-10105,ORD-10105-1,2026-02-22,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,HDY001,Anime Cloud Hoodie,Hoodies,0,699.0,0,ZAR,web,US,8001,failed,fulfilled,Manual Import
+ORD-10105,ORD-10105-2,02/22/2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SKU-TEE-002,Retro Mecha Tee,T-Shirts,2,329.0,0,ZAR,instagram_shop,ZA,,failed,fulfilled,Shopfront CSV Export
+ORD-10106,ORD-10106-1,02/04/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,sticker-pack-a,Sticker Pack A,ACCESSORIES,4,89.0,10,ZAR,web,,8001,paid,fulfilled,Manual Import
+ORD-10107,ORD-10107-1,2026-05-11,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,HDY-002,Cyber Cat Hoodie,Hoodies,1,749.0,0,ZAR,web,United States,,PAID,partially_returned,Shopfront CSV Export
+ORD-10107,ORD-10107-2,2026/05/11 04:05,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,jkt-rain-l,Rain City Jacket,Jackets,3,1299.0,10,ZAR,instagram_shop,South Africa,,PAID,partially_returned,Marketplace CSV Export
+ORD-10108,ORD-10108-1,2026/02/16 03:08,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,HDY-001,Anime Cloud Hoodie,Hoodies,3,699.0,0,ZAR,marketplace,south africa,8001,paid,fulfilled,Manual Import
+ORD-10108,ORD-10108-2,16/02/2026,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,TEE001,Moon Ramen Tee,T-Shirts,3,299.0,0,ZAR,wholesale_portal,RSA,8001,paid,fulfilled,Shopfront CSV Export
+ORD-10108,ORD-10108-3,16/02/2026,CUST-0007,N. Naidoo,n.naidoo@example.com,+27 82 111 0007,HDY002,Cyber Cat Hoodie,Hoodies,2,41.15,0,USD,mobile_app,United States,8001,paid,fulfilled,Marketplace CSV Export
+ORD-10109,ORD-10109-1,2026/05/31 14:05,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,SKU-STK-001,Sticker Pack A,Accessories,1,89.0,0,ZAR,web,US,,paid,fulfilled,Shopfront CSV Export
+ORD-10109,ORD-10109-2,05/31/2026,CUST-0008,T. Williams,t.williams@example.com,,CAP001,Pixel Fox Cap,Caps,1,199.0,15,ZAR,marketplace,South Africa,SW1A 1AA,paid,fulfilled,Manual Import
+ORD-10110,ORD-10110-1,01-Feb-2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,STK-A,Sticker Pack A,Accessories,1,89.0,20,ZAR,instagram_shop,RSA,,Paid ,fulfilled,Manual Import
+ORD-10111,ORD-10111-1,02/08/2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SKU_HDY_001,Anime Cloud Hoodie,Hoodies,2,699.0,0,zar,wholesale_portal,south africa,,refunded,on hold,Shopfront CSV Export
+ORD-10111,ORD-10111-2,08-Feb-2026,CUST-0009,R. van Wyk,r.vanwyk@example.com,+27 82 111 0009,SOC001,Neon Socks,Socks,2,119.0,0,,wholesale_portal,,,refunded,on hold,Marketplace CSV Export
+ORD-10112,ORD-10112-1,03/04/2026,CUST-0011,K. Adams,k.adams@example.com,,SKU_TEE_001,Moon Ramen Tee,T-Shirts,2,299.0,10,ZAR,marketplace,UK,,pending,cancelled,Shopfront CSV Export
+ORD-10112,ORD-10112-2,03-Apr-2026,CUST-0011,K. Adams,kadams@examplecom,+27 82 111 0011,SOC001,Neon Socks,Socks,3,6.54,10,USD,wholesale_portal,,10001,pending,cancelled,Shopfront CSV Export
+ORD-10112,ORD-10112-3,03-Apr-2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,cap-001,Pixel Fox Cap,Caps,4,199.0,0,ZAR,mobile_app,UK,SW1A 1AA,pending,cancelled,Marketplace CSV Export
+ORD-10113,ORD-10113-1,04/09/2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,jkt-rain-l,rain city jacket,Jackets,1,1299.0,20,ZAR,mobile_app,US,8001,paid,fulfilled,Shopfront CSV Export
+ORD-10113,ORD-10113-2,09/04/2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,SKU_TEE_002,Retro Mecha Tee,T-Shirts,2,329.0,10,zar,wholesale_portal,,7700,paid,fulfilled,Marketplace CSV Export
+ORD-10113,ORD-10113-3,09-Apr-2026,CUST-0004,S. Khan,s.khan@example.com,+27 82 111 0004,sock-neon-m,Neon Socks,Socks,2,119.0,15,ZAR,web,US,8001,paid,fulfilled,Manual Import
+ORD-10114,ORD-10114-1,29/04/2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SKU-JKT-001,Rain City Jacket,Jackets,2,1299.0,15,ZAR,web,,7700,paid,processing,Manual Import
+ORD-10114,ORD-10114-2,2026/04/29 07:57,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SKU-TEE-002,Retro Mecha Tee,T-Shirts,3,329.0,20,ZAR,mobile_app,RSA,8001,paid,processing,Marketplace CSV Export
+ORD-10114,ORD-10114-3,2026/04/29 07:57,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,hdy-001,Anime Cloud Hoodie,HOODIES,1,699.0,0,ZAR,web,RSA,SW1A 1AA,paid,processing,Shopfront CSV Export
+ORD-10115,ORD-10115-1,2026/01/21 23:37,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,SKU_HDY_002,Cyber Cat Hoodie,Hoodies,4,749.0,25,ZAR,marketplace,ZA,,paid,fulfilled,Shopfront CSV Export
+ORD-10116,ORD-10116-1,04/10/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,SKU_TEE_001,Moon Ramen Tee,T-Shirts,2,299.0,15,ZAR,wholesale_portal,,,paid,fulfilled,Shopfront CSV Export
+ORD-10116,ORD-10116-2,10/04/2026,CUST-0005,L. Smith,l.smith@example.com,+27 82 111 0005,HDY-002,Cyber Cat Hoodie,Hoodies,3,749.0,0,ZAR,mobile_app,,7441,paid,fulfilled,Marketplace CSV Export
+ORD-10117,ORD-10117-1,2026/03/30 19:42,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,JKT001,Rain City Jacket,Jackets,2,1299.0,20,ZAR,instagram_shop,United States,SW1A 1AA,paid,fulfilled,Shopfront CSV Export
+ORD-10118,ORD-10118-1,01/25/2026,CUST-0003,M. Jacobs,m.jacobs@example.com,+27 82 111 0003,sock-neon-m,Neon Socks,Socks,1,119.0,0,zar,instagram_shop,UK,,pending,fulfilled,Shopfront CSV Export
+ORD-10119,ORD-10119-1,15/04/2026,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SKU_BAG_001,Kawaii Canvas Tote,Bags,1,249.0,0,ZAR,marketplace,south africa,8001,paid,Fulfilled,Shopfront CSV Export
+ORD-10119,ORD-10119-2,2026-04-15,CUST-0006,J. Petersen,j.petersen@example.com,+27 82 111 0006,SKU_TEE_001,Moon Ramen Tee,T-Shirts,1,299.0,5,ZAR,wholesale_portal,United States,,paid,Fulfilled,Marketplace CSV Export
+ORD-10120,ORD-10120-1,13-Mar-2026,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,SKU-TEE-001,Moon Ramen Tee,T-Shirts,2,299.0,20,,mobile_app,United States,8001,paid,processing,Manual Import
+ORD-10120,ORD-10120-2,2026/03/13 18:34,CUST-0012,Z. Omar,z.omar@example.com,+27 82 111 0012,mug-001,Studio Desk Mug,Mugs,1,149.0,0,ZAR,instagram_shop,UK,8001,paid,processing,Shopfront CSV Export
+ORD-10006,ORD-10006-1,2026-01-05,CUST-0008,T. Williams,t.williams@example.com,+27 82 111 0008,bag-001,Kawaii Canvas Tote,Bags,4,249.0,0,ZAR,marketplace,,7700,paid,processing,Shopfront CSV Export
+ORD-10016,ORD-10016-1-DUP,05-Apr-2026,CUST-0001,A. Daniels,A.DANIELS@EXAMPLE.COM,+27 82 111 0001,mug-001,Studio Desk Mug,Mugs,1,149.0,20,ZAR,wholesale_portal,UK,SW1A 1AA,paid,cancelled,Manual Import
+ORD-99999,ORD-99999-1,30-Jan-2026,CUST-0011,K. Adams,k.adams@example.com,+27 82 111 0011,UNKNOWN-ABC,Mystery Product,Hoodies,2,749.0,110,ZAR,mobile_app,US,7441,paid,fulfilled,Shopfront CSV Export

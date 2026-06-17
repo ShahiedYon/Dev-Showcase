@@ -1,0 +1,70 @@
+# Data quality rules for DataFlow Control Tower
+required_fields:
+  sales_orders:
+    - order_id
+    - order_line_id
+    - order_date
+    - customer_id
+    - sku
+    - qty
+    - unit_price
+    - currency
+  inventory_snapshot:
+    - snapshot_date
+    - warehouse_id
+    - sku
+    - on_hand_qty
+    - reserved_qty
+  shipments:
+    - shipment_id
+    - order_id
+    - status
+
+normalization:
+  sku:
+    use_sku_master_mapping: true
+    strip_spaces: true
+    uppercase: true
+    replace_underscores_with_hyphens: true
+  currency:
+    allowed: [ZAR, USD, EUR]
+    uppercase: true
+  country:
+    map:
+      RSA: ZA
+      South Africa: ZA
+      south africa: ZA
+      United States: US
+      UK: GB
+
+validations:
+  - id: DQ001
+    name: Required fields cannot be blank
+    severity: high
+  - id: DQ002
+    name: Quantity must be greater than zero
+    severity: high
+  - id: DQ003
+    name: Unit price must be greater than zero
+    severity: high
+  - id: DQ004
+    name: Discount must be between 0 and 100
+    severity: medium
+  - id: DQ005
+    name: SKU must map to canonical SKU
+    severity: high
+  - id: DQ006
+    name: Return quantity cannot exceed sold quantity
+    severity: high
+  - id: DQ007
+    name: Delivered date cannot be before shipped date
+    severity: high
+  - id: DQ008
+    name: Duplicate business keys must be flagged
+    severity: medium
+  - id: DQ009
+    name: Cancelled orders should not have delivered shipments
+    severity: medium
+  - id: DQ010
+    name: Available inventory should equal on_hand_qty minus reserved_qty
+    severity: medium
