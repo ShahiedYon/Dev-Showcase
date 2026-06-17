@@ -99,6 +99,15 @@ button {
   border-radius: 8px;
   cursor: pointer;
   text-align: left;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.nav-item:hover {
+  border-color: rgba(0, 222, 255, 0.35);
+  transform: translateX(2px);
 }
 
 .nav-item.active {
@@ -583,6 +592,197 @@ h1 {
   margin-top: 18px;
 }
 
+.journey-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 210px;
+  padding: 28px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(34, 211, 238, 0.35), transparent 30%),
+    linear-gradient(135deg, #051845, #0b327e 54%, #2340b3);
+  border-radius: 8px;
+  box-shadow: 0 26px 54px rgba(8, 28, 72, 0.2);
+}
+
+.journey-banner.compact {
+  margin-top: 18px;
+}
+
+.journey-banner h2 {
+  max-width: 860px;
+  margin-top: 16px;
+  font-size: 34px;
+  line-height: 1.08;
+}
+
+.journey-banner p {
+  max-width: 920px;
+  margin-top: 14px;
+  color: #cfdbfb;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.run-score {
+  flex: 0 0 150px;
+  min-height: 150px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(170, 225, 255, 0.35);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.run-score strong {
+  display: block;
+  font-size: 30px;
+}
+
+.run-score span {
+  display: block;
+  margin-top: 6px;
+  color: #c8d8fb;
+  font-size: 13px;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.story-card,
+.source-file-card,
+.story-metric,
+.check-item {
+  border: 1px solid #d8e4f3;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 44px rgba(16, 47, 96, 0.08);
+}
+
+.story-card {
+  min-height: 230px;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 20px;
+}
+
+.story-card svg,
+.source-file-card svg,
+.check-item svg {
+  color: #2563eb;
+}
+
+.story-card h3 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.story-card p,
+.source-file-card p,
+.source-file-card small {
+  color: #5f7198;
+  line-height: 1.45;
+}
+
+.story-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.52fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.story-split.wide-first {
+  grid-template-columns: minmax(0, 1.25fr) minmax(360px, 0.75fr);
+}
+
+.metric-stack {
+  display: grid;
+  gap: 12px;
+}
+
+.story-metric {
+  min-height: 86px;
+  display: grid;
+  align-content: center;
+  gap: 6px;
+  padding: 16px;
+}
+
+.story-metric span {
+  color: #60749e;
+  font-size: 13px;
+}
+
+.story-metric strong {
+  color: #061536;
+  font-size: 26px;
+}
+
+.check-list {
+  display: grid;
+  gap: 12px;
+}
+
+.check-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 10px;
+  padding: 14px;
+  color: #52678f;
+  line-height: 1.45;
+}
+
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.source-file-card {
+  min-height: 260px;
+  display: grid;
+  align-content: start;
+  gap: 14px;
+  padding: 20px;
+}
+
+.source-file-card span {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  padding: 6px 9px;
+  color: #155cff;
+  background: #edf4ff;
+  border: 1px solid #d6e6ff;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.source-file-card h3 {
+  margin-top: 12px;
+  font-size: 19px;
+}
+
+.source-file-card small {
+  padding-top: 12px;
+  border-top: 1px solid #e5edf8;
+}
+
 .table {
   display: grid;
   gap: 9px;
@@ -611,6 +811,14 @@ h1 {
 
 .table-row strong {
   color: #061536;
+}
+
+.issue-detail-row {
+  grid-template-columns: 80px minmax(0, 1.5fr) minmax(110px, auto);
+}
+
+.inventory-row {
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr) auto;
 }
 
 .risk {
@@ -682,7 +890,11 @@ h1 {
   .featured-card,
   .analytics-grid,
   .tables-grid,
-  .kpi-grid {
+  .kpi-grid,
+  .story-grid,
+  .story-split,
+  .story-split.wide-first,
+  .source-grid {
     grid-template-columns: 1fr;
   }
 
@@ -717,5 +929,14 @@ h1 {
   .node {
     width: 62px;
     height: 62px;
+  }
+
+  .journey-banner {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .run-score {
+    min-height: 110px;
   }
 }
