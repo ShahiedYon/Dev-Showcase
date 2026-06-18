@@ -1,0 +1,211 @@
+import type { AISummary, DQIssue, ErrorRecord, InventoryRisk, OrderRecord, RevenuePoint, SummaryMetrics } from "./client";
+
+export const demoSummary: SummaryMetrics = {
+  totalRevenue: 133652.4,
+  orders: 118,
+  customers: 12,
+  dataQualityScore: 84.7,
+  cleanRecords: 322,
+  rejectedRecords: 58,
+  issueCount: 82,
+  openSupportTickets: 57,
+  inventoryRiskCount: 11,
+  latestRun: {
+    runId: "netlify-demo",
+    status: "completed",
+    startedAt: "2026-06-18T09:17:16",
+    finishedAt: "2026-06-18T09:17:16",
+    totalRecords: 380,
+    cleanRecords: 322,
+    rejectedRecords: 58,
+    dqScore: 84.7,
+  },
+};
+
+export const demoRevenue: RevenuePoint[] = [
+  { month: "2026-01", revenue: 21802.1 },
+  { month: "2026-02", revenue: 16137.06 },
+  { month: "2026-03", revenue: 27971.01 },
+  { month: "2026-04", revenue: 32552.84 },
+  { month: "2026-05", revenue: 24546.44 },
+  { month: "2026-06", revenue: 5196.0 },
+  { month: "2026-08", revenue: 269.1 },
+  { month: "2026-09", revenue: 871.3 },
+  { month: "2026-10", revenue: 2247.0 },
+  { month: "2026-11", revenue: 716.4 },
+  { month: "2026-12", revenue: 1343.15 },
+];
+
+export const demoIssues: DQIssue[] = [
+  { ruleId: "DQ006", issue: "Return quantity exceeds sold quantity.", severity: "high", count: 18 },
+  { ruleId: "DQ001", issue: "Return reason is missing.", severity: "high", count: 15 },
+  { ruleId: "DQ001", issue: "Required field is blank.", severity: "high", count: 9 },
+  { ruleId: "DQ002", issue: "Quantity must be greater than zero.", severity: "high", count: 7 },
+  { ruleId: "DQ010", issue: "Available inventory does not equal on-hand minus reserved.", severity: "medium", count: 7 },
+  { ruleId: "DQ008", issue: "Duplicate business key detected.", severity: "medium", count: 5 },
+  { ruleId: "DQ004", issue: "Discount must be between 0 and 100.", severity: "medium", count: 5 },
+  { ruleId: "DQ006", issue: "Return processed date is before requested date.", severity: "high", count: 4 },
+];
+
+export const demoErrors: ErrorRecord[] = [
+  {
+    sourceTable: "inventory_snapshot",
+    businessKey: "WH-CPT:LEGACY-SKU-77",
+    ruleId: "DQ005",
+    severity: "high",
+    fieldName: "source_sku",
+    issue: "Inventory SKU did not map to canonical SKU.",
+  },
+  {
+    sourceTable: "inventory_snapshot",
+    businessKey: "WH-DBN:SKU-BAG-001",
+    ruleId: "DQ010",
+    severity: "medium",
+    fieldName: "available_qty",
+    issue: "Available inventory does not equal on-hand minus reserved.",
+  },
+  {
+    sourceTable: "shipments",
+    businessKey: "SHP-8076",
+    ruleId: "DQ007",
+    severity: "high",
+    fieldName: "delivered_at",
+    issue: "Delivered date is before shipped date.",
+  },
+  {
+    sourceTable: "shipments",
+    businessKey: "SHP-8065",
+    ruleId: "DQ009",
+    severity: "medium",
+    fieldName: "status",
+    issue: "Cancelled order has delivered shipment.",
+  },
+  {
+    sourceTable: "returns",
+    businessKey: "RET-2012:SKU-HDY-001",
+    ruleId: "DQ006",
+    severity: "high",
+    fieldName: "qty_returned",
+    issue: "Return quantity exceeds sold quantity.",
+  },
+  {
+    sourceTable: "sales_orders",
+    businessKey: "ORD-10037-2",
+    ruleId: "DQ008",
+    severity: "medium",
+    fieldName: "order_line_id",
+    issue: "Duplicate business key detected.",
+  },
+  {
+    sourceTable: "sales_orders",
+    businessKey: "ORD-10044-1",
+    ruleId: "DQ003",
+    severity: "high",
+    fieldName: "unit_price",
+    issue: "Unit price must be greater than zero.",
+  },
+  {
+    sourceTable: "sales_orders",
+    businessKey: "ORD-10091-3",
+    ruleId: "DQ005",
+    severity: "high",
+    fieldName: "sku",
+    issue: "SKU did not map to canonical SKU.",
+  },
+];
+
+export const demoOrders: OrderRecord[] = [
+  {
+    orderId: "ORD-10027",
+    orderLineId: "ORD-10027-3",
+    orderDate: "2026-12-04",
+    customerId: "CUST-0008",
+    canonicalSku: "SKU-HDY-001",
+    qty: 1,
+    currency: "ZAR",
+    revenue: 594.15,
+    status: "fulfilled",
+  },
+  {
+    orderId: "ORD-10063",
+    orderLineId: "ORD-10063-2",
+    orderDate: "2026-12-02",
+    customerId: "CUST-0009",
+    canonicalSku: "SKU-HDY-002",
+    qty: 1,
+    currency: "ZAR",
+    revenue: 749.0,
+    status: "processing",
+  },
+  {
+    orderId: "ORD-10116",
+    orderLineId: "ORD-10116-2",
+    orderDate: "2026-10-04",
+    customerId: "CUST-0005",
+    canonicalSku: "SKU-HDY-002",
+    qty: 3,
+    currency: "ZAR",
+    revenue: 2247.0,
+    status: "fulfilled",
+  },
+  {
+    orderId: "ORD-10029",
+    orderLineId: "ORD-10029-1",
+    orderDate: "2026-06-03",
+    customerId: "CUST-0002",
+    canonicalSku: "SKU-JKT-001",
+    qty: 4,
+    currency: "ZAR",
+    revenue: 5196.0,
+    status: "fulfilled",
+  },
+  {
+    orderId: "ORD-10053",
+    orderLineId: "ORD-10053-3",
+    orderDate: "2026-05-31",
+    customerId: "CUST-0004",
+    canonicalSku: "SKU-BAG-001",
+    qty: 1,
+    currency: "ZAR",
+    revenue: 186.75,
+    status: "processing",
+  },
+];
+
+export const demoInventoryRisk: InventoryRisk[] = [
+  { warehouseId: "WH-DBN", canonicalSku: "SKU-HDY-001", availableQty: -17, reorderPoint: 30, stockStatus: "risk", riskLevel: "critical" },
+  { warehouseId: "WH-DBN", canonicalSku: "SKU-TEE-002", availableQty: -10, reorderPoint: 10, stockStatus: "risk", riskLevel: "critical" },
+  { warehouseId: "WH-JHB", canonicalSku: "SKU-MUG-001", availableQty: -6, reorderPoint: 20, stockStatus: "risk", riskLevel: "critical" },
+  { warehouseId: "WH-JHB", canonicalSku: "SKU-SOC-001", availableQty: -2, reorderPoint: 20, stockStatus: "risk", riskLevel: "critical" },
+  { warehouseId: "WH-CPT", canonicalSku: "SKU-CAP-001", availableQty: 0, reorderPoint: 30, stockStatus: "risk", riskLevel: "critical" },
+  { warehouseId: "WH-DBN", canonicalSku: "SKU-TEE-001", availableQty: 6, reorderPoint: 30, stockStatus: "risk", riskLevel: "watch" },
+  { warehouseId: "WH-CPT", canonicalSku: "SKU-TEE-002", availableQty: 9, reorderPoint: 10, stockStatus: "risk", riskLevel: "watch" },
+  { warehouseId: "WH-JHB", canonicalSku: "SKU-TEE-001", availableQty: 11, reorderPoint: 30, stockStatus: "risk", riskLevel: "watch" },
+];
+
+export const demoAiSummary: AISummary = {
+  headline: "UrbanThread Outfitters data is usable with targeted remediation.",
+  score: 84.7,
+  findings: [
+    "Pipeline processed 322 clean records and rejected 58 records.",
+    "Top quality pattern: Return quantity exceeds sold quantity.",
+    "Inventory watch list contains 11 SKU and warehouse combinations.",
+    "Open support tickets in the fake helpdesk feed: 57.",
+  ],
+  recommendedActions: [
+    "Fix unmapped SKU aliases before publishing revenue and return metrics.",
+    "Review shipment timelines and cancelled-order shipment exceptions with warehouse operations.",
+    "Add automated upstream checks for required fields, duplicate order lines, and inventory availability math.",
+    "Prioritize replenishment review for SKU-HDY-001 at WH-DBN.",
+  ],
+};
+
+export const demoDashboardData = {
+  summary: demoSummary,
+  revenue: demoRevenue,
+  issues: demoIssues,
+  errors: demoErrors,
+  orders: demoOrders,
+  inventoryRisk: demoInventoryRisk,
+  aiSummary: demoAiSummary,
+};
