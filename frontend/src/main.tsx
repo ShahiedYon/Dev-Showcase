@@ -37,6 +37,7 @@ import "./styles.css";
 
 const API_BASE = "http://127.0.0.1:8000";
 const APP_BASE = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL.replace(/\/$/, "");
+const DATAFLOW_TOWER_URL = APP_BASE ? "/" : "http://127.0.0.1:5174/";
 
 type BrandConfig = {
   brandName?: string;
@@ -332,7 +333,7 @@ function App() {
           {brand.logoPath ? <img src={brand.logoPath} alt="" /> : <span className="luma-mark" aria-hidden="true" />}
           <span>
             <strong>{brandName}</strong>
-            <small>Flow platform</small>
+            <small>Agentic platform</small>
           </span>
         </button>
 
@@ -341,6 +342,14 @@ function App() {
           {moduleCards.map((module) => {
             const page = normalizeSlug(module);
             const Icon = moduleMeta[page]?.icon || Braces;
+            if (page === "data-transformation") {
+              return (
+                <a className="nav-button app-switch-link" href={DATAFLOW_TOWER_URL} key={page}>
+                  <Icon size={18} />
+                  <span>{module.name || module.title || "Data Flow"}</span>
+                </a>
+              );
+            }
             return (
               <NavButton
                 key={page}
@@ -358,7 +367,7 @@ function App() {
           <NavButton active={false} icon={Link2} label="Connections" onClick={() => handleAction("Connections will manage API keys, storage, and client system links. Backend connection slots are next.")} />
           <NavButton active={false} icon={LayoutTemplate} label="Templates" onClick={() => navigate("template-builder")} />
           <NavButton active={false} icon={Settings} label="Settings" onClick={() => handleAction("Settings are driven by brand.config.json for now: brand, colors, logo path, and export prefix.")} />
-          <a className="nav-button app-switch-link" href="/">
+          <a className="nav-button app-switch-link" href={DATAFLOW_TOWER_URL}>
             <BarChart3 size={18} />
             <span>DataFlow Tower</span>
           </a>
