@@ -43,7 +43,7 @@ docs/
 ## Backend
 
 ```powershell
-cd "C:\Users\yonsh\OneDrive\Documents\Dev Showcase\projects\dataflow-control-tower\backend"
+cd projects\dataflow-control-tower\backend
 python -m pip install -r requirements.txt
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8010
 ```
@@ -63,7 +63,7 @@ Useful endpoints:
 ## Frontend
 
 ```powershell
-cd "C:\Users\yonsh\OneDrive\Documents\Dev Showcase\projects\dataflow-control-tower\frontend"
+cd projects\dataflow-control-tower\frontend
 npm install
 npm run dev
 ```
@@ -90,7 +90,7 @@ To connect the deployed frontend to a live backend later, deploy the FastAPI app
 ## Tests
 
 ```powershell
-cd "C:\Users\yonsh\OneDrive\Documents\Dev Showcase\projects\dataflow-control-tower"
+cd projects\dataflow-control-tower
 python -m pytest -q
 
 cd frontend

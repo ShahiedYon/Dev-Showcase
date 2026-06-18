@@ -1,6 +1,6 @@
 {
-  "framework": "Vex Python core + RAG brain + n8n workflows + Karpathy/autoresearch loop",
-  "team_rule": "Bee researches. Ex drafts or executes. Vee audits. Calc scores. Vex coordinates and routes approvals to Shahied.",
+  "framework": "Agentic workflow team for portfolio automation demos",
+  "team_rule": "Bee researches. Ex drafts or executes. Vee audits. Calc scores. Vex coordinates and routes approvals to the operator.",
   "team_guide_path": "TEAM.md",
   "agents": [
     {

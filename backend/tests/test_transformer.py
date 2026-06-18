@@ -51,7 +51,7 @@ def test_export_workbook_creates_clean_and_issue_sheets(tmp_path):
     rows, columns = read_table(SAMPLE_FILE)
     result = clean_and_validate(rows, suggest_mappings(columns))
 
-    output = export_workbook(result, tmp_path, "vextly_export")
+    output = export_workbook(result, tmp_path, "luma_flow_export")
 
     assert output.exists()
     assert output.suffix == ".xlsx"

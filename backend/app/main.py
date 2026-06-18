@@ -41,7 +41,7 @@ UPLOAD_DIR = BACKEND_ROOT / "uploads"
 OUTPUT_DIR = BACKEND_ROOT / "outputs"
 SAMPLE_DIR = PROJECT_ROOT / "samples"
 
-app = FastAPI(title="Vextly White-Label App Suite")
+app = FastAPI(title="Luma Flow Agentic Platform")
 
 app.add_middleware(
     CORSMiddleware,
