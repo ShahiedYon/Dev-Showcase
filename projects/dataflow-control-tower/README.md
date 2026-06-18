@@ -78,7 +78,12 @@ The dashboard runs the pipeline on first load, then displays live metrics from t
 
 ## Netlify Demo Mode
 
-The root `netlify.toml` deploys this frontend from the nested project folder and sets `VITE_STATIC_DEMO=true`. That makes the public Netlify CV demo use a bundled data snapshot, because Netlify static hosting cannot run the local FastAPI backend at `127.0.0.1:8010`.
+The root `netlify.toml` builds both showcase frontends into one Netlify publish folder:
+
+- DataFlow Control Tower at `/`
+- Luma Flow at `/lumaflow/`
+
+The DataFlow build sets `VITE_STATIC_DEMO=true`. That makes the public Netlify CV demo use a bundled data snapshot, because Netlify static hosting cannot run the local FastAPI backend at `127.0.0.1:8010`.
 
 To connect the deployed frontend to a live backend later, deploy the FastAPI app to a service such as Render, Railway, or Fly.io, then set `VITE_STATIC_DEMO=false` and `VITE_API_BASE_URL` to that backend URL in Netlify.
 

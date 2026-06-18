@@ -229,6 +229,10 @@ function App() {
               </button>
             );
           })}
+          <a className="nav-item app-switch-link" href="/lumaflow/">
+            <Sparkles size={18} />
+            <span>Luma Flow Suite</span>
+          </a>
         </nav>
 
         <section className="source-card">

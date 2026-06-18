@@ -36,6 +36,7 @@ import vexAvatarUrl from "../../agents/vex/avatar.png";
 import "./styles.css";
 
 const API_BASE = "http://127.0.0.1:8000";
+const APP_BASE = import.meta.env.BASE_URL === "/" ? "" : import.meta.env.BASE_URL.replace(/\/$/, "");
 
 type BrandConfig = {
   brandName?: string;
@@ -212,12 +213,20 @@ function normalizeSlug(module: ModuleInfo): ActivePage {
   return "dashboard";
 }
 
+function stripAppBase(pathname: string): string {
+  if (APP_BASE && pathname.startsWith(APP_BASE)) {
+    return pathname.slice(APP_BASE.length) || "/";
+  }
+  return pathname;
+}
+
 function pageFromPath(pathname: string): ActivePage {
-  if (pathname.includes("/modules/data-transform")) return "data-transformation";
-  if (pathname.includes("/modules/reconciliation")) return "reconciliation";
-  if (pathname.includes("/modules/template-builder")) return "template-builder";
-  if (pathname.includes("/modules/document-extraction")) return "document-extraction";
-  if (pathname.includes("/modules/lead-cleaner")) return "lead-cleaner";
+  const path = stripAppBase(pathname);
+  if (path.includes("/modules/data-transform")) return "data-transformation";
+  if (path.includes("/modules/reconciliation")) return "reconciliation";
+  if (path.includes("/modules/template-builder")) return "template-builder";
+  if (path.includes("/modules/document-extraction")) return "document-extraction";
+  if (path.includes("/modules/lead-cleaner")) return "lead-cleaner";
   return "dashboard";
 }
 
@@ -230,7 +239,8 @@ function routeForPage(page: ActivePage): string {
     "document-extraction": "/modules/document-extraction",
     "lead-cleaner": "/modules/lead-cleaner"
   };
-  return routes[page];
+  const route = routes[page];
+  return APP_BASE ? `${APP_BASE}${route === "/" ? "/" : route}` : route;
 }
 
 async function readJson<T>(path: string, init?: RequestInit): Promise<T> {
@@ -348,6 +358,10 @@ function App() {
           <NavButton active={false} icon={Link2} label="Connections" onClick={() => handleAction("Connections will manage API keys, storage, and client system links. Backend connection slots are next.")} />
           <NavButton active={false} icon={LayoutTemplate} label="Templates" onClick={() => navigate("template-builder")} />
           <NavButton active={false} icon={Settings} label="Settings" onClick={() => handleAction("Settings are driven by brand.config.json for now: brand, colors, logo path, and export prefix.")} />
+          <a className="nav-button app-switch-link" href="/">
+            <BarChart3 size={18} />
+            <span>DataFlow Tower</span>
+          </a>
         </nav>
 
         <div className="sidebar-badge">

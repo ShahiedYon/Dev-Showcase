@@ -1,11 +1,15 @@
 [build]
-base = "projects/dataflow-control-tower/frontend"
-command = "npm ci && npm run build"
-publish = "dist"
+command = "node scripts/build-netlify.mjs"
+publish = "netlify-dist"
 
 [build.environment]
-NODE_VERSION = "20"
+NODE_VERSION = "22"
 VITE_STATIC_DEMO = "true"
+
+[[redirects]]
+from = "/lumaflow/*"
+to = "/lumaflow/index.html"
+status = 200
 
 [[redirects]]
 from = "/*"
