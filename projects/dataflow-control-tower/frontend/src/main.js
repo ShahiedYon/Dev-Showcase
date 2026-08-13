@@ -1,5 +1,11 @@
 import "./styles.css";
 import { fieldMappings, qualityRules, sourceFiles } from "./data.js";
+import {
+  createExceptionWorkbook,
+  createMappingWorkbook,
+  createReconciliationWorkbook,
+  createRuleCatalogueWorkbook,
+} from "./exception-workbook.js";
 import { runDataPipeline } from "./pipeline.js";
 
 const state = { result: null, running: false, ruleDomain: "all", exceptionSearch: "", exceptionSeverity: "all", mappingSearch: "" };
@@ -151,13 +157,6 @@ const runPipeline = async ({ announce = true } = {}) => {
   }
 };
 
-const csvEscape = (value) => `"${String(value ?? "").replaceAll('"', '""')}"`;
-const downloadCsv = (name, rows) => {
-  if (!rows.length) return;
-  const headers = Object.keys(rows[0]);
-  const content = [headers.map(csvEscape).join(","), ...rows.map((row) => headers.map((header) => csvEscape(row[header])).join(","))].join("\n");
-  downloadBlob(name, new Blob([content], { type: "text/csv;charset=utf-8" }));
-};
 const downloadBlob = (name, blob) => {
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
@@ -165,6 +164,50 @@ const downloadBlob = (name, blob) => {
   link.click();
   window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
 };
+
+const excelMimeType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+const downloadWorkbook = async ({ buttonSelector, fileName, build, successMessage }) => {
+  const button = $(buttonSelector);
+  const originalLabel = button.textContent;
+  button.disabled = true;
+  button.textContent = "Building Excel workbook…";
+  try {
+    const buffer = await build();
+    downloadBlob(fileName, new Blob([buffer], { type: excelMimeType }));
+    showToast(successMessage);
+  } catch (error) {
+    console.error(error);
+    showToast("The Excel workbook could not be created. Please retry.");
+  } finally {
+    button.disabled = false;
+    button.textContent = originalLabel;
+  }
+};
+
+const downloadMappingWorkbook = () => downloadWorkbook({
+  buttonSelector: "#download-mapping",
+  fileName: "dataflow-source-to-target-mapping.xlsx",
+  build: () => createMappingWorkbook(fieldMappings),
+  successMessage: "Formula-driven mapping workbook downloaded.",
+});
+const downloadRuleWorkbook = () => downloadWorkbook({
+  buttonSelector: "#download-rules",
+  fileName: "dataflow-rule-catalogue.xlsx",
+  build: () => createRuleCatalogueWorkbook(qualityRules),
+  successMessage: "Formula-driven rule catalogue downloaded.",
+});
+const downloadExceptionWorkbook = () => state.result && downloadWorkbook({
+  buttonSelector: "#download-exceptions",
+  fileName: "dataflow-exception-control-pack.xlsx",
+  build: () => createExceptionWorkbook(state.result),
+  successMessage: "Formula-driven exception control pack downloaded.",
+});
+const downloadReconciliationWorkbook = () => state.result && downloadWorkbook({
+  buttonSelector: "#download-reconciliation",
+  fileName: "dataflow-reconciliation-control-pack.xlsx",
+  build: () => createReconciliationWorkbook(state.result),
+  successMessage: "Formula-driven reconciliation workbook downloaded.",
+});
 
 const bindEvents = () => {
   $$('[data-view]').forEach((button) => button.addEventListener("click", () => activateView(button.dataset.view)));
@@ -174,10 +217,10 @@ const bindEvents = () => {
   $("#exception-filter").addEventListener("input", (event) => { state.exceptionSearch = event.target.value; if (state.result) renderExceptions(state.result); });
   $("#severity-filter").addEventListener("change", (event) => { state.exceptionSeverity = event.target.value; if (state.result) renderExceptions(state.result); });
   $$("#rule-filters button").forEach((button) => button.addEventListener("click", () => { state.ruleDomain = button.dataset.domain; $$("#rule-filters button").forEach((item) => item.classList.toggle("active", item === button)); renderRules(); }));
-  $("#download-mapping").addEventListener("click", () => downloadCsv("dataflow-source-to-target-mapping.csv", fieldMappings));
-  $("#download-rules").addEventListener("click", () => downloadCsv("dataflow-rule-catalogue.csv", qualityRules));
-  $("#download-exceptions").addEventListener("click", () => state.result && downloadCsv("dataflow-exception-log.csv", state.result.issues));
-  $("#download-reconciliation").addEventListener("click", () => state.result && downloadCsv("dataflow-reconciliation.csv", state.result.reconciliations));
+  $("#download-mapping").addEventListener("click", downloadMappingWorkbook);
+  $("#download-rules").addEventListener("click", downloadRuleWorkbook);
+  $("#download-exceptions").addEventListener("click", downloadExceptionWorkbook);
+  $("#download-reconciliation").addEventListener("click", downloadReconciliationWorkbook);
   $("#download-sqlite").addEventListener("click", () => state.result && downloadBlob("dataflow-canonical-demo.sqlite", new Blob([state.result.databaseBytes], { type: "application/vnd.sqlite3" })));
   window.addEventListener("hashchange", () => activateView(location.hash.replace("#", "") || "overview", false));
 };

@@ -225,7 +225,7 @@
           <div class="page-heading">
             <div><span class="eyebrow"><span></span> Latest controlled run</span><h1>Pipeline execution</h1><p>Follow every stage from source extraction to reconciled SQLite output.</p></div>
             <div class="heading-actions">
-              <button class="button secondary" id="download-reconciliation" type="button">Download reconciliation CSV</button>
+              <button class="button secondary" id="download-reconciliation" type="button">Download reconciliation workbook</button>
               <button class="button primary" type="button" data-run-trigger>Run again</button>
             </div>
           </div>
@@ -257,7 +257,7 @@
         <section class="view" id="view-mapping" data-view-panel="mapping" tabindex="-1">
           <div class="page-heading">
             <div><span class="eyebrow"><span></span> Source-to-target control</span><h1>Field mapping</h1><p>Every important field carries its source, transformation, canonical target and validation control.</p></div>
-            <button class="button secondary" id="download-mapping" type="button">Download mapping CSV</button>
+            <button class="button secondary" id="download-mapping" type="button">Download mapping workbook</button>
           </div>
           <article class="panel mapping-summary">
             <div><span>Source systems</span><strong>5</strong></div><div><span>Mapped fields</span><strong id="mapped-field-count">—</strong></div><div><span>Canonical tables</span><strong>8</strong></div><div><span>Unmapped critical fields</span><strong class="good">0</strong></div>
@@ -274,7 +274,7 @@
         <section class="view" id="view-rules" data-view-panel="rules" tabindex="-1">
           <div class="page-heading">
             <div><span class="eyebrow"><span></span> Governed controls</span><h1>Data quality rule catalogue</h1><p>Stable, globally unique rule IDs with severity, scope and clear remediation expectations.</p></div>
-            <button class="button secondary" id="download-rules" type="button">Download rule catalogue CSV</button>
+            <button class="button secondary" id="download-rules" type="button">Download rule catalogue workbook</button>
           </div>
           <div class="filter-pills" id="rule-filters" aria-label="Filter rules by domain">
             <button class="active" type="button" data-domain="all">All</button><button type="button" data-domain="orders">Orders</button><button type="button" data-domain="inventory">Inventory</button><button type="button" data-domain="returns">Returns</button><button type="button" data-domain="shipments">Shipments</button>
@@ -287,7 +287,7 @@
         <section class="view" id="view-exceptions" data-view-panel="exceptions" tabindex="-1">
           <div class="page-heading">
             <div><span class="eyebrow"><span></span> Controlled remediation</span><h1>Exception workbench</h1><p>Rejected records retain the business key, failed field, observed value, expected result and severity.</p></div>
-            <button class="button secondary" id="download-exceptions" type="button">Download exception CSV</button>
+            <button class="button secondary" id="download-exceptions" type="button">Download Excel control pack</button>
           </div>
           <div class="exception-summary" id="exception-summary"></div>
           <article class="panel table-panel">
