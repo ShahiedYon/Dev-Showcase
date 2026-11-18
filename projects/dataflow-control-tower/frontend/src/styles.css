@@ -241,3 +241,30 @@ td code { color: #263b5b; font-size: 9px; }.target-code { color: #185ec5; }
   .topbar .button { min-height: 36px; padding-inline: 12px; font-size: 10px; }.hero-visual { min-height: 380px; }.flow-node { width: 155px; padding: 13px; }.source-node { left: 13px; top: 38px; }.control-node { right: 13px; top: 138px; }.output-node { left: 18px; bottom: 37px; }.flow-line { display: none; }.score-ring { width: 112px; height: 112px; left: 50%; top: 54%; }.metric-grid { grid-template-columns: 1fr 1fr; }.metric-card { min-height: 115px; padding: 16px; }.metric-card strong { font-size: 25px; }.metric-card.accent { grid-column: span 2; }.stage-strip { grid-template-columns: 1fr; }.stage-chip::after { display: none; }.overview-grid .panel { padding: 20px; }.proof-grid { grid-template-columns: 1fr; }.recon-list > div { grid-template-columns: 1fr auto; }.recon-list em { display: none; }.run-banner { grid-template-columns: 1fr; }.run-banner > div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.1); }.canonical-grid { grid-template-columns: repeat(2,1fr); }.pipeline-stage { grid-template-columns: 34px minmax(0,1fr); }.pipeline-stage .stage-status { grid-column: 2; justify-self: start; }.disposition-row { grid-template-columns: 80px minmax(50px,1fr) 42px 42px; }.mapping-summary, .exception-summary { grid-template-columns: 1fr 1fr; }.about-panel .button { width: 100%; }.hero-actions .button { width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+.impact-card { padding:clamp(24px,4vw,50px); border-radius:22px; background:#102942; color:white; box-shadow:var(--shadow); }
+.impact-card small { color:#9ce2d6; letter-spacing:.12em; font-weight:700; }
+.impact-card h2 { font-size:clamp(23px,2.4vw,36px); line-height:1.15; margin:22px 0 10px; }
+.impact-card .impact-time { font-size:clamp(30px,3vw,46px); font-weight:750; letter-spacing:-.045em; margin:0; color:white; }
+.impact-time b { color:#73dbc9; }
+.time-bars { display:grid; gap:6px; margin:15px 0 20px; }
+.time-bars i { height:7px; width:100%; background:#8598aa; border-radius:4px; }
+.time-bars i+i { width:12.5%; background:#73dbc9; }
+.impact-card p {font-size:16px;line-height:1.55;color:#e0ebf1}
+.profile-print {background:transparent;border:0;border-bottom:1px solid;color:#a9eddf;font:inherit;padding:8px 0;cursor:pointer}
+.hero h1 em {color:#18575b;background:none;font-size:.72em;margin-top:.22em;}
+.proof-section {margin:8px 0 34px;}
+.proof-grid p {font-size:15px;color:#d5e1ed;}
+.proof-grid strong {font-size:18px;}
+.demo-intro h2 {margin:.3em 0;}
+@media(max-width:650px){.proof-grid{grid-template-columns:1fr}.proof-section{padding:24px}.hero{gap:20px}.impact-card{min-width:0}}
+@media print {
+ @page {margin:16mm}
+ body,.app-shell,.main-content {display:block!important;margin:0!important;padding:0!important;background:white!important;color:#111!important}
+ .sidebar,.topbar,.mobile-nav,.site-footer,.skip-link,.toast,.hero-actions,.disclaimer,.profile-print,.view,.demo-intro,.metric-grid,.overview-grid {display:none!important}
+ #view-overview {display:block!important}
+ .hero,.proof-section,.impact-card {display:block;min-height:0;padding:10px 0;margin:0;background:white;color:#111;box-shadow:none}
+ .hero h1 {font-size:32px}.impact-card .impact-time,.impact-card p,.impact-card small,.proof-grid p,.proof-section .section-kicker {color:#222}
+ .time-bars {display:none}.proof-grid {grid-template-columns:1fr 1fr}.proof-section h2 {font-size:24px;margin:8px 0}
+ .proof-section::after {display:block;margin-top:20px;content:"Portfolio · sydataflow.netlify.app   |   LinkedIn · linkedin.com/in/shahied-yon-631a5182"}
+}
