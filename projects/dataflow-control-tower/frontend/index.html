@@ -46,6 +46,13 @@ body .hero{min-height:0;padding:clamp(34px,6vw,84px) 0;display:grid;grid-templat
 }
 @media screen and (max-width:780px){body .hero{grid-template-columns:1fr;gap:23px}body .hero h1{font-size:clamp(48px,10vw,70px)}.signal-art{width:100%;max-width:540px}.run-meta{display:none}body .mobile-nav{scrollbar-width:thin}}
 @media print{.signal-art{display:none}}
+
+@media screen{
+.signal-art{overflow:hidden;border-radius:17px;background:#11162b;color:white;box-shadow:0 12px 36px #191c3c26}.signal-art svg{filter:none;max-height:320px;background:#11162b}
+.signal-art .trace-caption{display:block;padding:16px clamp(16px,3vw,32px) 22px;border-top:1px solid #383d55;color:#e3e5f1}.trace-caption fieldset{padding:0;border:0;margin:0;min-width:0}.trace-caption legend{font-size:16px;font-weight:650;margin-bottom:9px}.trace-options{display:flex;gap:6px}.trace-options label{cursor:pointer;display:flex;align-items:center;gap:6px;padding:8px 12px;border-radius:6px;background:#242a43;color:#e2e4f1}.trace-options label:has(:checked){background:#545093;color:white}.trace-options input{margin:0;accent-color:#bbb5ff}.trace-options label:focus-within{outline:2px solid #d4cbff;outline-offset:2px}.trace-caption .trace-detail{display:none;color:#daddec;font:15px/1.5 system-ui;margin:12px 0 0;min-height:3em}.signal-art:has([value=source]:checked) .trace-source,.signal-art:has([value=check]:checked) .trace-check,.signal-art:has([value=review]:checked) .trace-end{display:block}
+.signal-art:has([value=source]:checked) .trace-input,.signal-art:has([value=review]:checked) .trace-review{stroke-width:6}.signal-art:has([value=check]:checked) .trace-control{stroke:white;stroke-width:2}
+@media(prefers-reduced-motion:no-preference){.signal-art:has([value=source]:checked) .trace-input,.signal-art:has([value=review]:checked) .trace-review{stroke-dasharray:400;animation:trace-line .55s ease-out}@keyframes trace-line{from{stroke-dashoffset:400}to{stroke-dashoffset:0}}}
+}
 </style></head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -132,10 +139,10 @@ body .hero{min-height:0;padding:clamp(34px,6vw,84px) 0;display:grid;grid-templat
               <div class="eyebrow"><span></span> Cape Town, South Africa</div>
               <h1>Shahied Yon<em>Data Solution Analyst</em></h1>
               <p>
-                I build migration and reconciliation tools for finance teams. Explore how I trace a discrepancy from the source file to a decision a reviewer can defend.
+                At FinQuery, I helped cut a four-hour post-migration review to 30 minutes. I build the checks, work through exceptions with finance teams and train the people who use the tools.
               </p>
               <div class="hero-actions">
-                <a class="button primary large" href="/invoice-review.html">Explore the invoice case →</a>
+                <a class="button primary large" href="/invoice-review.html">Investigate an R8,500 discrepancy →</a>
                 <button class="button secondary large" id="hero-run" type="button">Run sample migration</button>
                 
               </div>
@@ -143,18 +150,19 @@ body .hero{min-height:0;padding:clamp(34px,6vw,84px) 0;display:grid;grid-templat
             </div>
             <figure class="signal-art"><svg viewBox="0 0 540 370" role="img" aria-labelledby="signal-title"><title id="signal-title">Two invoice extracts converge at validation. One duplicate branches into review.</title><defs><pattern id="dots" width="17" height="17" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#55638a"/></pattern><linearGradient id="plate" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#aaa6ff"/><stop offset=".55" stop-color="#625ef3"/><stop offset="1" stop-color="#353b91"/></linearGradient></defs>
 <rect width="540" height="370" rx="22" fill="#11162b"/><rect width="540" height="370" fill="url(#dots)" opacity=".52"/>
-<g fill="none" stroke-width="3" stroke-linejoin="round"><path stroke="#9695ff" d="M32 142l62-36 117 68M32 195l66-38 98 57"/><path stroke="#93f3ce" d="M330 176l68-39 101 58"/><path stroke="#f6aa79" d="M316 220l84 48 93-53"/></g>
-<g stroke="#b4afff" stroke-linejoin="round"><path fill="#292e63" d="M158 211l111-64 112 64-112 65z"/><path fill="#444591" d="M158 196l111-64 112 64-112 65z"/><path fill="url(#plate)" d="M158 177l111-64 112 64-112 65z"/></g>
+<g fill="none" stroke-width="3" stroke-linejoin="round"><path class="trace-input" stroke="#9695ff" d="M32 142l62-36 117 68M32 195l66-38 98 57"/><path stroke="#93f3ce" d="M330 176l68-39 101 58"/><path class="trace-review" stroke="#f6aa79" d="M316 220l84 48 93-53"/></g>
+<g class="trace-control" stroke="#b4afff" stroke-linejoin="round"><path fill="#292e63" d="M158 211l111-64 112 64-112 65z"/><path fill="#444591" d="M158 196l111-64 112 64-112 65z"/><path fill="url(#plate)" d="M158 177l111-64 112 64-112 65z"/></g>
 <g fill="none" stroke="#e7e6ff" stroke-width="3"><path d="M229 171l36-21 48 28-36 21z"/><path d="M242 175l24-14m-14 20l24-14"/></g><g fill="#c7c3ff"><circle cx="32" cy="142" r="5"/><circle cx="32" cy="195" r="5"/></g><circle cx="499" cy="195" r="6" fill="#93f3ce"/><circle cx="493" cy="215" r="6" fill="#f6aa79"/>
-<g font-family="monospace" font-size="14" letter-spacing="1" fill="#e4e8fa"><text x="27" y="78">SOURCE FILES</text><text x="211" y="308">VALIDATION</text><text x="382" y="117" fill="#93f3ce">ACCEPTED</text><text x="388" y="299" fill="#f6aa79">REVIEW</text></g></svg><figcaption><strong>Migration control flow</strong><span>DataFlow / system diagram</span></figcaption></figure>
+<g font-family="monospace" font-size="14" letter-spacing="1" fill="#e4e8fa"><text x="27" y="78">SOURCE FILES</text><text x="211" y="308">VALIDATION</text><text x="382" y="117" fill="#93f3ce">ACCEPTED</text><text x="388" y="299" fill="#f6aa79">REVIEW</text></g></svg><figcaption class="trace-caption"><fieldset><legend>Trace a sample invoice</legend><div class="trace-options"><label><input type="radio" name="trace" value="source" checked>Source</label><label><input type="radio" name="trace" value="check">Check</label><label><input type="radio" name="trace" value="review">Review</label></div></fieldset>
+<p class="trace-detail trace-source">Two extracts contain invoice INV-42 for R8,500 on account A-12.</p><p class="trace-detail trace-check">The invoice and account match. The batch exceeds Finance’s control total by R8,500.</p><p class="trace-detail trace-end">Finance confirms the opening balance includes INV-42. Holding the second copy brings the total to R18,500.</p></figcaption></figure>
           </div>
 
           <section class="proof-section" aria-labelledby="work-results">
             <div><span class="section-kicker">Professional experience</span><h2 id="work-results">Selected results</h2></div>
             <div class="proof-grid">
-              <article><strong>About 2 hours to 7 minutes</strong><p>I automated chart of accounts conversions with Excel Office Scripts and trained the team to use the workflow.</p></article>
-              <article><strong>4 hours to 30 minutes</strong><p>I coordinated user testing and documented the new review workflow so the team could use it independently.</p></article>
-              <article><strong>8 staff across one team</strong><p>At the City of Cape Town, I managed eight staff and trained the department on the ISO standard I helped implement.</p></article>
+              <article><strong>Chart of accounts · 2 hours to 7 minutes</strong><p>I automated chart of accounts conversions with Excel Office Scripts and trained the team to use the workflow.</p></article>
+              <article><strong>Quality review · 4 hours to 30 minutes</strong><p>I coordinated user testing and documented the new review workflow so the team could use it independently.</p></article>
+              <article><strong>Led a team of eight</strong><p>At the City of Cape Town, I managed eight staff and trained the department on the ISO standard I helped implement.</p></article>
               <article><strong>From requirements to rollout</strong><p>I support strategic account migrations and acquisitions, translate business needs into technical specifications and help users resolve issues during testing.</p></article>
             </div>
           </section>
