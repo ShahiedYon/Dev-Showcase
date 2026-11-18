@@ -34,6 +34,11 @@
   <style>
 @media screen{body .app-shell{background:#f7f4eb}body .hero h1,body .impact-card h2,body .proof-section h2{font-family:Georgia,serif;font-weight:500;letter-spacing:-.045em}body .hero h1 em{color:#79462d}body .impact-card{background:#fcfaf2;color:#28352e;border:1px solid #c6c2b4;border-top:5px solid #a85532;border-radius:2px;box-shadow:none}body .impact-card :is(p,.impact-time,small,.profile-print){color:#294a40}body .impact-card .impact-time b{color:#985137}body .proof-section{border-radius:3px;background:#203d34}body .button.primary{background:#285748;box-shadow:none}body .hero-actions a{text-decoration:none}}
 @media(prefers-reduced-motion:no-preference){.hero-actions :is(button,a):active,.nav-item:active{transform:translateY(2px)}.view.active{animation:arrive .2s ease-out}@keyframes arrive{from{opacity:.5;transform:translateY(4px)}to{opacity:1;transform:none}}}
+
+@media screen{
+body .sidebar{background:#1d342d;border-right:1px solid #44594c}body .nav-item.active{background:#334e42;color:#fff;box-shadow:inset 3px 0 #e0ae79}body .hero{gap:clamp(24px,4vw,64px)}body .impact-card{background:#203d34;color:#fffaf0;border:0;border-top:5px solid #b96543;box-shadow:6px 6px 0 #d6d2c1}body .impact-card :is(p,.impact-time,small,.profile-print){color:#f3f2e7}body .impact-card .impact-time b{color:#f7ce99}body .impact-card h2{color:#fffaf0}body .hero h1{line-height:.99}body .hero h1 em{font-style:italic;font-size:.6em}body .proof-grid article{border-color:#82968b}body .proof-grid strong{font-family:Georgia,serif;font-size:23px;line-height:1.2}body .proof-section .section-kicker{color:#edcaa0}.review-chart{display:grid;gap:5px;margin:20px 0}.review-chart div{display:flex;justify-content:space-between;font:13px/1.4 system-ui}.review-chart i{height:6px;background:#b5bfb1;margin-bottom:8px}.review-chart i:last-child{width:12.5%;background:#f7ce99}
+}
+@media print{.review-chart{display:none}}
 </style></head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -136,7 +141,7 @@
               <small>FEATURED WORK &nbsp; / &nbsp; FINQUERY</small>
               <h2>Post-migration quality review</h2>
               <p class="impact-time">4 hours <b>→</b> 30 min</p>
-              <div class="time-bars" aria-hidden="true"><i></i><i></i></div>
+              <div class="review-chart" aria-label="Time per review, manual 240 minutes, assisted 30 minutes"><div><span>Manual review</span><strong>240 min</strong></div><i></i><div><span>With the tool</span><strong>30 min</strong></div><i></i></div>
               <p>I worked with a subject matter expert to turn a manual review into a web app, coordinated user testing and wrote the team’s guide.</p>
               <button type="button" class="profile-print">Print or save my profile ↓</button>
             </aside>
