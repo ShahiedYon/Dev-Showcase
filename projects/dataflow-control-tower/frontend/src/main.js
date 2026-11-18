@@ -26,7 +26,7 @@ const showToast = (message) => {
 };
 
 const activateView = (view, updateHash = true) => {
-  if (!$('[data-view-panel]').some(panel => panel.dataset.viewPanel === view)) view = "overview";
+  if (!$$('[data-view-panel]').some(panel => panel.dataset.viewPanel === view)) view = "overview";
   $$('[data-view-panel]').forEach((panel) => panel.classList.toggle("active", panel.dataset.viewPanel === view));
   $$('[data-view]').forEach((button) => {
     const active = button.dataset.view === view;
@@ -137,7 +137,7 @@ const runPipeline = async ({ announce = true } = {}) => {
   state.running = true;
   setRunButtons(true);
   $(".status-value").textContent = "Running";
-  const exports = $("#download-exceptions, #download-reconciliation, #download-sqlite");
+  const exports = document.querySelectorAll("#download-exceptions, #download-reconciliation, #download-sqlite");
   exports.forEach(button => { button.disabled = true; });
   $("#run-status").textContent = "Running controlled pipeline";
   $("#status-dot").className = "status-dot running";
