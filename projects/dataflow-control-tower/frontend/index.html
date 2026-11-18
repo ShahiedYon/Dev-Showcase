@@ -114,13 +114,13 @@
         <section class="view active" id="view-overview" data-view-panel="overview" tabindex="-1">
           <div class="hero">
             <div class="hero-copy">
-              <div class="eyebrow"><span></span> Shahied Yon · Data Solution Analyst</div>
-              <h1>I help teams find data errors <em>before a migration goes live.</em></h1>
+              <div class="eyebrow"><span></span> Cape Town · Enterprise data &amp; automation</div>
+              <h1>Shahied Yon<em>Data Solution Analyst</em></h1>
               <p>
                 At FinQuery, I turn manual checks into tools that migration teams can use and maintain. Try DataFlow with sample retail records, then inspect a rejected row to see which check it failed and why.
               </p>
               <div class="hero-actions">
-                <button class="button primary large" id="hero-run" type="button">Run the sample migration</button>
+                <button class="button primary large" id="hero-run" type="button">Run sample migration</button>
                 <button class="button secondary large" type="button" data-jump="exceptions">Explore rejected records</button>
               </div>
               <div class="disclaimer">
@@ -128,36 +128,27 @@
                 Synthetic demonstration data. No employer, client or confidential information is used.
               </div>
             </div>
-            <div class="hero-visual" aria-label="Pipeline flow: sources, controls, canonical data and decisions">
-              <div class="visual-orbit orbit-one"></div>
-              <div class="visual-orbit orbit-two"></div>
-              <div class="flow-node source-node">
-                <span class="node-kicker">5 inputs</span><strong>Source data</strong><small>CSV · XLSX · JSON · APIs</small>
-              </div>
-              <div class="flow-line line-one"><span></span></div>
-              <div class="flow-node control-node">
-                <span class="node-kicker">16 controls</span><strong>Quality engine</strong><small>Map · validate · reject</small>
-              </div>
-              <div class="flow-line line-two"><span></span></div>
-              <div class="flow-node output-node">
-                <span class="node-kicker">SQLite</span><strong>Trusted output</strong><small>Reconciled canonical tables</small>
-              </div>
-              <div class="score-ring" aria-label="Current data quality score">
-                <span id="hero-score">—</span><small>DQ score</small>
-              </div>
-            </div>
+            <aside class="impact-card" aria-label="Featured work at FinQuery">
+              <small>FEATURED WORK &nbsp; / &nbsp; FINQUERY</small>
+              <h2>Post-migration quality review</h2>
+              <p class="impact-time">4 hours <b>→</b> 30 min</p>
+              <div class="time-bars" aria-hidden="true"><i></i><i></i></div>
+              <p>I worked with a subject matter expert to turn a manual review into a web app, coordinated user testing and wrote the team’s guide.</p>
+              <button type="button" class="profile-print">Print or save my profile ↓</button>
+            </aside>
           </div>
 
           <section class="proof-section" aria-labelledby="work-results">
             <div><span class="section-kicker">Professional experience</span><h2 id="work-results">What changed for my teams</h2></div>
             <div class="proof-grid">
               <article><strong>About 2 hours to 7 minutes</strong><p>I automated chart of accounts conversions with Excel Office Scripts and trained the team to use the workflow.</p></article>
-              <article><strong>4 hours to 30 minutes</strong><p>I worked with a subject matter expert on a post-migration quality review app, coordinated user testing and wrote the team’s training guide.</p></article>
+              <article><strong>4 hours to 30 minutes</strong><p>I coordinated user testing and documented the new review workflow so the team could use it independently.</p></article>
               <article><strong>8 staff across one team</strong><p>At the City of Cape Town, I managed eight staff and trained the department on the ISO standard I helped implement.</p></article>
               <article><strong>From requirements to rollout</strong><p>I support strategic account migrations and acquisitions, translate business needs into technical specifications and help users resolve issues during testing.</p></article>
             </div>
           </section>
 
+          <div class="demo-intro"><span class="section-kicker">Interactive case study · synthetic retail data</span><h2>Migration run results</h2><p>Quality score <strong id="hero-score">—</strong></p></div>
           <div class="metric-grid" aria-label="Latest pipeline metrics">
             <article class="metric-card">
               <span class="metric-label">Raw records</span><strong id="metric-raw">—</strong><small>Across five source feeds</small>
@@ -209,7 +200,7 @@
             <article class="panel reconciliation-panel">
               <div class="panel-heading compact">
                 <div><span class="section-kicker">Control totals</span><h2>Reconciliation status</h2></div>
-                <span class="pass-pill">All controls passed</span>
+                <span class="pass-pill">Record counts</span>
               </div>
               <div class="recon-list" id="overview-reconciliation"></div>
             </article>
@@ -228,7 +219,7 @@
           </div>
           <div class="run-banner">
             <div><span>Run ID</span><strong id="run-id">—</strong></div>
-            <div><span>Status</span><strong class="status-value">Completed</strong></div>
+            <div><span>Status</span><strong class="status-value">Preparing</strong></div>
             <div><span>SQLite database</span><strong id="sqlite-size">—</strong></div>
             <div><span>Duration</span><strong id="run-duration">—</strong></div>
           </div>
