@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; connect-src 'none'; form-action 'none'; base-uri 'none'"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The duplicate invoice | Shahied Yon</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f7f4eb;color:#252921;font:17px/1.55 system-ui,sans-serif}main,header,footer{max-width:1080px;margin:auto;padding:24px clamp(18px,5vw,66px)}header,footer{display:flex;justify-content:space-between;gap:14px;border-bottom:2px solid #252921}a{color:#205b51}h1,h2,h3{font-family:Georgia,serif;font-weight:500;line-height:1.08}h1{font-size:clamp(46px,8vw,90px);letter-spacing:-.055em;margin:12px 0 20px}h2{font-size:clamp(29px,4vw,46px);margin:8px 0 18px}p{max-width:68ch}.k,th{font:700 12px/1.4 ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}.k{color:#804327}.lede{font:clamp(20px,2.6vw,28px)/1.45 Georgia,serif}section,details{border-top:1px solid #9c9b8c;margin:32px 0;padding-top:22px}summary{cursor:pointer;font-weight:700}.sheet{background:#fffdf6;border-left:5px solid #c25830;padding:clamp(15px,3vw,32px)}button,.action{display:inline-block;border:0;background:#204f46;color:white;padding:12px 18px;border-radius:3px;font:600 16px system-ui;cursor:pointer;text-decoration:none}button:disabled{background:#dbdcd1;color:#555a51;cursor:default}button:active,.action:active{transform:translateY(2px)}:focus-visible{outline:3px solid #ac502a;outline-offset:3px}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{text-align:left;border-bottom:1px solid #d7d4c9;padding:9px 5px}label{display:inline-grid;gap:4px;margin:6px 12px 10px 0}select,input{font:inherit;padding:8px;max-width:100%}input{width:9rem}output{display:block;font-weight:650;margin:12px 0}dl{display:grid;grid-template-columns:minmax(95px,1fr) 4fr;gap:12px}dt{font-weight:700}dd{margin:0}.scroll{overflow:auto}.note{color:#53574b}.receipt{border-top:2px solid #204f46;padding:12px 0}[hidden]{display:none}@media(prefers-reduced-motion:no-preference){.reveal{animation:ink .25s ease-out}@keyframes ink{from{opacity:.2;transform:translateY(5px)}to{opacity:1;transform:none}}} 
+
+.cover{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,.85fr);gap:clamp(25px,5vw,64px);align-items:center;padding:30px 0 12px}
+.cover h1{max-width:10ch;line-height:.94}.cover-copy>.lede{line-height:1.32}.ledger{margin:0;background:#203d34;color:#faf6e9;padding:clamp(22px,3vw,36px);border-top:5px solid #b96543;box-shadow:6px 6px 0 #d6d2c1;font-variant-numeric:tabular-nums}
+.ledger figcaption,.variance span{font:600 12px/1.45 ui-monospace,monospace;text-transform:uppercase;letter-spacing:.1em}.ledger figcaption{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #82968b;padding-bottom:18px}.ledger dl{grid-template-columns:1fr auto;align-items:baseline}.ledger dt{font:15px/1.45 system-ui}.ledger dd{font:26px/1.45 Georgia,serif;text-align:right}.variance{display:grid;border-top:3px double #a1b2a7;padding-top:18px}.variance strong{font:clamp(44px,5vw,66px)/1.14 Georgia,serif;letter-spacing:-.05em;color:#f7ce99}.sheet h3{font-size:28px}.sheet td:last-child,.sheet th:last-child{text-align:right}.sheet tbody tr:last-child{background:#f1ecdf}header a,footer a{text-underline-offset:4px}header{align-items:baseline}header a{font:600 20px Georgia,serif}header span{font:13px ui-monospace,monospace}
+@media(max-width:760px){.cover{grid-template-columns:1fr;padding-top:8px}.cover h1{max-width:none}.ledger{max-width:100%;width:100%}.ledger dl{margin:10px 0}.variance{grid-template-columns:1fr auto;align-items:baseline}.variance strong{font-size:38px}}
+body{background:#f7f8fc;color:#191e34}header{border-color:#d9dce8}header a,a{color:#473abd}h1,h2,h3,header a,.lede,.ledger dd,.variance strong{font-family:Inter,"Helvetica Neue",Arial,sans-serif}h1,h2,h3{font-weight:720;letter-spacing:-.055em}.lede{color:#414961;font-size:clamp(20px,2.2vw,28px)}.k{color:#5746b5}.action,button{background:#493bbe;border-radius:8px}.ledger{background:#151a32;border-top-color:#9187ff;box-shadow:0 12px 32px #20204b20;border-radius:12px;color:#fff}.variance strong{color:#b4adff}.sheet{background:white;border-left-color:#8176ea;border-radius:8px}.sheet tbody tr:last-child{background:#f1efff}section,details{border-color:#c8cbd9}summary{color:#3b3286}input,select{border:1px solid #aeb2c4;background:white;border-radius:6px}.receipt{border-color:#6151c8}footer{border-color:#d9dce8}
+</style>
+<header><a href="/">← Shahied Yon</a><span>DataFlow / Field notes</span></header><main>
+<div class="cover"><div class="cover-copy"><p class="k">Migration assurance · Interactive case study</p><h1>The duplicate invoice.</h1><p class="lede">Finance expects R18,500. The migration file says R27,000. Which line would you hold before sign-off?</p>
+<p>During an acquisition, two billing extracts can include the same invoice. Adding the exports together overstates receivables. Removing a row on invoice number alone can also erase a legitimate charge. Try the analyst’s review using a fictional batch.</p>
+<a class="action" href="#review">Investigate the R8,500 difference ↓</a>
+</div><figure class="ledger"><figcaption>Extract comparison <span>ZAR</span></figcaption><dl><dt>Imported batch</dt><dd>27,000</dd><dt>Finance control</dt><dd>18,500</dd></dl><div class="variance"><span>Unreconciled</span><strong>+8,500</strong></div></figure></div>
+<details><summary>Read the specification and information security scope</summary><dl>
+<dt>Owner</dt><dd>The migration analyst prepares the batch. Finance decides whether the flagged invoice can be held.</dd>
+<dt>Inputs</dt><dd>Two fixed synthetic extracts in ZAR and an independently supplied control total. The fields needed for review are source, invoice, account reference and amount.</dd>
+<dt>Controls</dt><dd>Project each row onto those four fields, dropping the synthetic contact name and email. Flag repeated invoice and account pairs. A reviewer compares the amounts and source before making a decision.</dd>
+<dt>Release rule</dt><dd>Require a human decision. Issue a reconciliation receipt only when the included amounts equal the control total. Retain the held row in the review trail.</dd>
+<dt>Boundary</dt><dd>This exercise uses browser memory and accepts no uploads. Reloading clears the decision. Field removal covers the known sample schema. Account and invoice references remain linkable and would need controlled access in production.</dd>
+<dt>Production scope</dt><dd>Authenticated finance approval, access restrictions, a durable audit trail and a retention policy would be required before using client records. This exercise models the decision only.</dd></dl></details>
+<section id="review"><p class="k">Analyst’s worksheet</p><h2>Reconcile the batch</h2><p>Run the check to strip contact fields, compare the two extracts and identify the invoice that needs a person’s judgement.</p><button id="run">Scrub and compare three rows</button>
+<div id="findings" class="sheet" hidden><h3>Evidence for review</h3><p id="scrub"></p><div class="scroll"><table><thead><tr><th>Extract</th><th>Invoice</th><th>Account</th><th>ZAR</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p id="flag"></p><p><strong>Finance handover note</strong> · The opening balance already includes invoice INV-42 from the legacy extract. No second charge was raised.</p>
+<details id="ai-check"><summary>Inspect the scrubbed AI handoff</summary>
+<p>A finance assistant could draft a short queue summary. It needs batch counts and a control result. Contact details, account references, invoice numbers, exact amounts and handover notes stay outside its input.</p>
+<p class="k">Allowed input · local preview</p><pre id="payload" style="white-space:pre-wrap"></pre>
+<p><strong>Example briefing, generated by a local template</strong></p><p id="brief"></p>
+<p class="note">No model receives this data. An analyst must compare the source evidence, verify any proposed explanation and own the release decision. A balanced total alone cannot establish why an invoice was duplicated.</p></details>
+<label>Reviewer decision<select id="decision"><option value="">Choose a decision</option><option value="hold">Hold the acquisition copy</option><option value="keep">Keep both entries</option></select></label> <button id="confirm" disabled>Check and record decision</button>
+<output id="receipt" class="receipt" aria-live="polite"></output></div></section>
+<section><p class="k">Business case</p><h2>What is the review time worth?</h2><p>My FinQuery post-migration review went from four hours to 30 minutes. Use that time difference as a scenario for this invoice workflow. The rate, volume and cost below are illustrative. Time saved represents capacity, not cash received.</p>
+<label>Runs per month<input type="number" min="0" step="1" value="8" id="runs"></label><label>Hourly cost (R)<input type="number" min="0" step="any" value="300" id="rate"></label><label>First-year tool cost (R)<input type="number" min="0" step="any" value="24000" id="cost"></label>
+<output id="roi" aria-live="polite"></output><details><summary>How the estimate works</summary><p>Manual effort is 4 hours per run. Assisted effort includes 30 minutes of human review. Annual capacity value equals the hours saved per month × 12 × hourly cost. First-year ROI equals (annual capacity value minus implementation and operating cost) divided by that cost.</p></details></section>
+</main><footer><a href="/">Portfolio overview</a><a href="/#pipeline">Explore the retail pipeline →</a></footer>
+<script>
+const byId = id => document.getElementById(id);
+const records = [
+ {source:'Legacy',invoice:'INV-41',account:'A-09',amount:10000,name:'Demo One',email:'one@example.invalid'},
+ {source:'Legacy',invoice:'INV-42',account:'A-12',amount:8500,name:'Demo Two',email:'two@example.invalid'},
+ {source:'Acquisition',invoice:'INV-42',account:'A-12',amount:8500,name:'Demo Two',email:'two@example.invalid'}
+];
+const money = value => 'R' + value.toLocaleString('en-ZA',{maximumFractionDigits:2});
+const control = 18500;
+let reviewRows = [], duplicateIndex;
+byId('run').onclick = () => {
+ reviewRows = records.map(({source,invoice,account,amount}) => ({source,invoice,account,amount}));
+ const seen = new Set();
+ duplicateIndex = reviewRows.findIndex(row => {const key = row.invoice + '/' + row.account; if(seen.has(key)) return true; seen.add(key); return false;});
+ const table = byId('rows'); table.replaceChildren();
+ for(const row of reviewRows){const line = table.insertRow(); for(const value of [row.source,row.invoice,row.account,money(row.amount)]) line.insertCell().textContent=value;}
+ byId('scrub').textContent='Contact name and email removed from all three review rows. Only the four review fields appear below.';
+ byId('flag').textContent=reviewRows[duplicateIndex].invoice+' appears twice on the same account. Imported total '+money(reviewRows.reduce((n,row)=>n+row.amount,0))+'. Finance control '+money(control)+'.';
+ const summary={rows_reviewed:reviewRows.length,flagged_for_review:duplicateIndex<0?0:1,control_balanced:reviewRows.reduce((sum,row)=>sum+row.amount,0)===control};
+ byId('payload').textContent=JSON.stringify(summary,null,2);
+ byId('brief').textContent=summary.rows_reviewed+' rows checked. '+summary.flagged_for_review+' potential duplicate requires review. '+(summary.control_balanced?'The batch balances.':'The batch is out of balance. Inspect the extracts before sign-off.');
+ byId('ai-check').open=false;
+ byId('findings').hidden=false;byId('findings').classList.add('reveal');byId('receipt').textContent='';byId('decision').value='';byId('confirm').disabled=true;byId('decision').focus();
+};
+byId('decision').onchange=()=>{byId('confirm').disabled=!byId('decision').value;byId('receipt').textContent='';};
+byId('confirm').onclick=()=>{
+ const held=byId('decision').value==='hold';
+ const total=reviewRows.reduce((sum,row,i)=>sum+(held && i===duplicateIndex?0:row.amount),0);
+ byId('receipt').textContent=total===control?'Reconciled · 2 included, 1 held. '+money(total)+' matches Finance. Acquisition / INV-42 is held as a duplicate.':'Release blocked · '+money(total-control)+' above the Finance control. Check the handover note and revise your decision.';
+ byId('receipt').classList.add('reveal');
+};
+function estimate(){
+ const fields=['runs','rate','cost'].map(byId);
+ if(fields.some(el=>el.value==='' || !el.validity.valid)){byId('roi').textContent='Enter a valid non-negative value for each assumption.';return;}
+ const [runs,rate,cost]=fields.map(el=>el.valueAsNumber);
+ const saved=runs*3.5,annual=saved*rate*12;
+ byId('roi').textContent=runs*4+' manual hours → '+runs*.5+' assisted hours per month. '+saved+' hours freed monthly. Annual capacity value '+money(annual)+'. First-year net value '+money(annual-cost)+'. '+(cost?'Estimated ROI '+Math.round((annual-cost)/cost*100)+'%.':'ROI percentage requires a positive tool cost.');
+}
+['runs','rate','cost'].forEach(id=>byId(id).oninput=estimate);estimate();
+</script></html>

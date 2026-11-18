@@ -26,14 +26,14 @@ const showToast = (message) => {
 };
 
 const activateView = (view, updateHash = true) => {
-  if (!$("[data-view-panel='" + view + "']")) view = "overview";
+  if (!$$('[data-view-panel]').some(panel => panel.dataset.viewPanel === view)) view = "overview";
   $$('[data-view-panel]').forEach((panel) => panel.classList.toggle("active", panel.dataset.viewPanel === view));
   $$('[data-view]').forEach((button) => {
     const active = button.dataset.view === view;
     button.classList.toggle("active", active);
-    if (button.matches(".nav-item")) active ? button.setAttribute("aria-current", "page") : button.removeAttribute("aria-current");
+    active ? button.setAttribute("aria-current", "page") : button.removeAttribute("aria-current");
   });
-  if (updateHash) history.replaceState(null, "", view === "overview" ? "#overview" : `#${view}`);
+  if (updateHash && location.hash !== "#" + view) history.pushState(null, "", view === "overview" ? "#overview" : `#${view}`);
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
@@ -136,6 +136,9 @@ const runPipeline = async ({ announce = true } = {}) => {
   if (state.running) return;
   state.running = true;
   setRunButtons(true);
+  $(".status-value").textContent = "Running";
+  const exports = document.querySelectorAll("#download-exceptions, #download-reconciliation, #download-sqlite");
+  exports.forEach(button => { button.disabled = true; });
   $("#run-status").textContent = "Running controlled pipeline";
   $("#status-dot").className = "status-dot running";
   $$('[data-stage-id]').forEach((element) => element.classList.remove("running", "complete"));
@@ -145,8 +148,11 @@ const runPipeline = async ({ announce = true } = {}) => {
     });
     state.result = result;
     updateRunUi(result);
+    $(".status-value").textContent = "Completed";
+    exports.forEach(button => { button.disabled = false; });
     if (announce) showToast(`Pipeline ${result.runId} completed and reconciled.`);
   } catch (error) {
+    $(".status-value").textContent = "Failed";
     console.error(error);
     $("#run-status").textContent = "Pipeline error — please retry";
     $("#status-dot").className = "status-dot error";
@@ -210,9 +216,13 @@ const downloadReconciliationWorkbook = () => state.result && downloadWorkbook({
 });
 
 const bindEvents = () => {
+  $(".profile-print").addEventListener("click", () => window.print());
   $$('[data-view]').forEach((button) => button.addEventListener("click", () => activateView(button.dataset.view)));
   $$('[data-jump]').forEach((button) => button.addEventListener("click", () => activateView(button.dataset.jump)));
-  $$('[data-run-trigger], #run-pipeline, #hero-run').forEach((button) => button.addEventListener("click", () => runPipeline()));
+  $$('[data-run-trigger], #run-pipeline, #hero-run').forEach((button) => button.addEventListener("click", () => {
+    if (button.id === "hero-run") activateView("pipeline");
+    runPipeline();
+  }));
   $("#mapping-filter").addEventListener("input", (event) => { state.mappingSearch = event.target.value; renderMapping(); });
   $("#exception-filter").addEventListener("input", (event) => { state.exceptionSearch = event.target.value; if (state.result) renderExceptions(state.result); });
   $("#severity-filter").addEventListener("change", (event) => { state.exceptionSeverity = event.target.value; if (state.result) renderExceptions(state.result); });
